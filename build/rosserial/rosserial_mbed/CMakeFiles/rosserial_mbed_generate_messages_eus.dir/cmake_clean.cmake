@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/roseus/ros/rosserial_mbed/manifest.l"
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/roseus/ros/rosserial_mbed/msg/Adc.l"
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/roseus/ros/rosserial_mbed/srv/Test.l"
+  "/home/ubuntu/btp_catkin/devel/share/roseus/ros/rosserial_mbed/manifest.l"
+  "/home/ubuntu/btp_catkin/devel/share/roseus/ros/rosserial_mbed/msg/Adc.l"
+  "/home/ubuntu/btp_catkin/devel/share/roseus/ros/rosserial_mbed/srv/Test.l"
   "CMakeFiles/rosserial_mbed_generate_messages_eus"
 )
 

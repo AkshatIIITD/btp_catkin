@@ -48,13 +48,47 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/btp_catkin/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -80,38 +114,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -123,28 +125,26 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/akshat/ProjectROS/catkin_ws/build/CMakeFiles /home/akshat/ProjectROS/catkin_ws/build/using_markers/CMakeFiles/progress.marks
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akshat/ProjectROS/catkin_ws/build/CMakeFiles 0
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/btp_catkin/build/CMakeFiles /home/ubuntu/btp_catkin/build/using_markers/CMakeFiles/progress.marks
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/btp_catkin/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/clean
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/preinstall
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/preinstall
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 using_markers/CMakeFiles/basic_shapes.dir/rule:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/CMakeFiles/basic_shapes.dir/rule
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/CMakeFiles/basic_shapes.dir/rule
 .PHONY : using_markers/CMakeFiles/basic_shapes.dir/rule
 
 # Convenience name for target.
@@ -179,8 +179,83 @@ basic_shapes: using_markers/CMakeFiles/basic_shapes.dir/rule
 
 # fast build rule for target.
 basic_shapes/fast:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f using_markers/CMakeFiles/basic_shapes.dir/build.make using_markers/CMakeFiles/basic_shapes.dir/build
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f using_markers/CMakeFiles/basic_shapes.dir/build.make using_markers/CMakeFiles/basic_shapes.dir/build
 .PHONY : basic_shapes/fast
+
+# Convenience name for target.
+using_markers/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+.PHONY : using_markers/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_py: using_markers/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_py
+
+# fast build rule for target.
+visualization_msgs_generate_messages_py/fast:
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f using_markers/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make using_markers/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+using_markers/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+.PHONY : using_markers/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_nodejs: using_markers/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+visualization_msgs_generate_messages_nodejs/fast:
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f using_markers/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make using_markers/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+.PHONY : visualization_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+using_markers/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+.PHONY : using_markers/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_lisp: using_markers/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_lisp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_lisp/fast:
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f using_markers/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make using_markers/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+using_markers/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+.PHONY : using_markers/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_eus: using_markers/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_eus
+
+# fast build rule for target.
+visualization_msgs_generate_messages_eus/fast:
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f using_markers/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make using_markers/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+.PHONY : visualization_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+using_markers/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f CMakeFiles/Makefile2 using_markers/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+.PHONY : using_markers/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_cpp: using_markers/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_cpp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_cpp/fast:
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f using_markers/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make using_markers/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+.PHONY : visualization_msgs_generate_messages_cpp/fast
 
 src/basic_shapes.o: src/basic_shapes.cpp.o
 
@@ -188,7 +263,7 @@ src/basic_shapes.o: src/basic_shapes.cpp.o
 
 # target to build an object file
 src/basic_shapes.cpp.o:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f using_markers/CMakeFiles/basic_shapes.dir/build.make using_markers/CMakeFiles/basic_shapes.dir/src/basic_shapes.cpp.o
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f using_markers/CMakeFiles/basic_shapes.dir/build.make using_markers/CMakeFiles/basic_shapes.dir/src/basic_shapes.cpp.o
 .PHONY : src/basic_shapes.cpp.o
 
 src/basic_shapes.i: src/basic_shapes.cpp.i
@@ -197,7 +272,7 @@ src/basic_shapes.i: src/basic_shapes.cpp.i
 
 # target to preprocess a source file
 src/basic_shapes.cpp.i:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f using_markers/CMakeFiles/basic_shapes.dir/build.make using_markers/CMakeFiles/basic_shapes.dir/src/basic_shapes.cpp.i
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f using_markers/CMakeFiles/basic_shapes.dir/build.make using_markers/CMakeFiles/basic_shapes.dir/src/basic_shapes.cpp.i
 .PHONY : src/basic_shapes.cpp.i
 
 src/basic_shapes.s: src/basic_shapes.cpp.s
@@ -206,7 +281,7 @@ src/basic_shapes.s: src/basic_shapes.cpp.s
 
 # target to generate assembly for a file
 src/basic_shapes.cpp.s:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f using_markers/CMakeFiles/basic_shapes.dir/build.make using_markers/CMakeFiles/basic_shapes.dir/src/basic_shapes.cpp.s
+	cd /home/ubuntu/btp_catkin/build && $(MAKE) -f using_markers/CMakeFiles/basic_shapes.dir/build.make using_markers/CMakeFiles/basic_shapes.dir/src/basic_shapes.cpp.s
 .PHONY : src/basic_shapes.cpp.s
 
 # Help Target
@@ -215,14 +290,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
-	@echo "... install"
-	@echo "... list_install_components"
+	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... install/local"
+	@echo "... install/strip"
 	@echo "... basic_shapes"
+	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... visualization_msgs_generate_messages_nodejs"
+	@echo "... install"
+	@echo "... test"
+	@echo "... visualization_msgs_generate_messages_lisp"
+	@echo "... list_install_components"
+	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... src/basic_shapes.o"
 	@echo "... src/basic_shapes.i"
 	@echo "... src/basic_shapes.s"
@@ -237,6 +317,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

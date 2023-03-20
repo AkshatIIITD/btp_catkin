@@ -1,13 +1,10 @@
 # CMake generated Testfile for 
-# Source directory: /home/akshat/ProjectROS/catkin_ws/src
-# Build directory: /home/akshat/ProjectROS/catkin_ws/build
+# Source directory: /home/ubuntu/btp_catkin/src
+# Build directory: /home/ubuntu/btp_catkin/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("hector_slam/hector_geotiff_launch")
-subdirs("hector_slam/hector_slam")
-subdirs("hector_slam/hector_slam_launch")
 subdirs("my_nav")
 subdirs("rosserial/rosserial")
 subdirs("rosserial/rosserial_arduino")
@@ -20,27 +17,12 @@ subdirs("rosserial/rosserial_vex_cortex")
 subdirs("rosserial/rosserial_vex_v5")
 subdirs("rosserial/rosserial_xbee")
 subdirs("rosserial/rosserial_client")
-subdirs("slam_gmapping/slam_gmapping")
-subdirs("hector_slam/hector_map_tools")
-subdirs("hector_slam/hector_nav_msgs")
 subdirs("sensor_msgs")
-subdirs("hector_slam/hector_geotiff")
-subdirs("hector_slam/hector_geotiff_plugins")
-subdirs("hector_slam/hector_marker_drawing")
-subdirs("hector_slam/hector_compressed_map_transport")
 subdirs("rplidar_ros")
 subdirs("rosserial/rosserial_server")
-subdirs("slam_gmapping/gmapping")
-subdirs("hector_slam/hector_imu_attitude_to_tf")
-subdirs("hector_slam/hector_imu_tools")
-subdirs("hector_slam/hector_map_server")
-subdirs("hector_slam/hector_trajectory_server")
-subdirs("lidarbot")
 subdirs("rf2o_laser_odometry")
 subdirs("rosserial/rosserial_embeddedlinux")
 subdirs("rosserial/rosserial_test")
 subdirs("rosserial/rosserial_windows")
-subdirs("hector_slam/hector_mapping")
 subdirs("anrol")
-subdirs("navros_pkg")
 subdirs("using_markers")

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/python3/dist-packages/rosserial_mbed/msg/_Adc.py"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/python3/dist-packages/rosserial_mbed/msg/__init__.py"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/python3/dist-packages/rosserial_mbed/srv/_Test.py"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/python3/dist-packages/rosserial_mbed/srv/__init__.py"
+  "/home/ubuntu/btp_catkin/devel/lib/python3/dist-packages/rosserial_mbed/msg/_Adc.py"
+  "/home/ubuntu/btp_catkin/devel/lib/python3/dist-packages/rosserial_mbed/msg/__init__.py"
+  "/home/ubuntu/btp_catkin/devel/lib/python3/dist-packages/rosserial_mbed/srv/_Test.py"
+  "/home/ubuntu/btp_catkin/devel/lib/python3/dist-packages/rosserial_mbed/srv/__init__.py"
   "CMakeFiles/rosserial_mbed_generate_messages_py"
 )
 

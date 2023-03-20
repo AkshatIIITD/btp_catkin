@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++17
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"rf2o_laser_odometry\"
 
-CXX_INCLUDES = -I/home/akshat/ProjectROS/catkin_ws/src/rf2o_laser_odometry/include -isystem /home/akshat/ProjectROS/catkin_ws/devel/include -isystem /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/include -isystem /opt/ros/noetic/include -isystem /opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/eigen3 
+CXX_INCLUDES = -I/home/ubuntu/btp_catkin/src/rf2o_laser_odometry/include -isystem /home/ubuntu/btp_catkin/devel/include -isystem /home/ubuntu/btp_catkin/src/sensor_msgs/include -isystem /opt/ros/noetic/include -isystem /opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/eigen3 
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test.pdb"
+  "/home/ubuntu/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test"
+  "/home/ubuntu/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test.pdb"
   "CMakeFiles/sensor_msgs_test.dir/main.cpp.o"
 )
 

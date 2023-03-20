@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/btp_catkin/build
 
 # Utility rule file for _rosserial_msgs_generate_messages_check_deps_Log.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
 include rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/progress.make
 
 rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_msgs && ../../catkin_generated/env_cached.sh /home/akshat/ProjectROS/envir/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rosserial_msgs /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_msgs/msg/Log.msg 
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rosserial_msgs /home/ubuntu/btp_catkin/src/rosserial/rosserial_msgs/msg/Log.msg 
 
 _rosserial_msgs_generate_messages_check_deps_Log: rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log
 _rosserial_msgs_generate_messages_check_deps_Log: rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/build.make
@@ -67,10 +67,10 @@ rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps
 .PHONY : rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/build
 
 rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/cmake_clean.cmake
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/cmake_clean.cmake
 .PHONY : rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/clean
 
 rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_msgs /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_msgs /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/btp_catkin/src /home/ubuntu/btp_catkin/src/rosserial/rosserial_msgs /home/ubuntu/btp_catkin/build /home/ubuntu/btp_catkin/build/rosserial/rosserial_msgs /home/ubuntu/btp_catkin/build/rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rosserial/rosserial_msgs/CMakeFiles/_rosserial_msgs_generate_messages_check_deps_Log.dir/depend
 

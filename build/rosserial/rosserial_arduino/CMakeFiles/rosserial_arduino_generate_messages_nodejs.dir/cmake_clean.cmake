@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/gennodejs/ros/rosserial_arduino/msg/Adc.js"
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/gennodejs/ros/rosserial_arduino/srv/Test.js"
+  "/home/ubuntu/btp_catkin/devel/share/gennodejs/ros/rosserial_arduino/msg/Adc.js"
+  "/home/ubuntu/btp_catkin/devel/share/gennodejs/ros/rosserial_arduino/srv/Test.js"
   "CMakeFiles/rosserial_arduino_generate_messages_nodejs"
 )
 

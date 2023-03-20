@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/common-lisp/ros/rosserial_msgs/msg/Log.lisp"
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/common-lisp/ros/rosserial_msgs/msg/TopicInfo.lisp"
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/common-lisp/ros/rosserial_msgs/srv/RequestParam.lisp"
+  "/home/ubuntu/btp_catkin/devel/share/common-lisp/ros/rosserial_msgs/msg/Log.lisp"
+  "/home/ubuntu/btp_catkin/devel/share/common-lisp/ros/rosserial_msgs/msg/TopicInfo.lisp"
+  "/home/ubuntu/btp_catkin/devel/share/common-lisp/ros/rosserial_msgs/srv/RequestParam.lisp"
   "CMakeFiles/rosserial_msgs_generate_messages_lisp"
 )
 

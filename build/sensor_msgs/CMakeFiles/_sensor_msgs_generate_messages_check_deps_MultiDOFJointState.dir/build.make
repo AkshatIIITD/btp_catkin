@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/btp_catkin/build
 
 # Utility rule file for _sensor_msgs_generate_messages_check_deps_MultiDOFJointState.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
 include sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/progress.make
 
 sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState:
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs && ../catkin_generated/env_cached.sh /home/akshat/ProjectROS/envir/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sensor_msgs /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/msg/MultiDOFJointState.msg std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Twist:geometry_msgs/Wrench:geometry_msgs/Transform:geometry_msgs/Vector3
+	cd /home/ubuntu/btp_catkin/build/sensor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sensor_msgs /home/ubuntu/btp_catkin/src/sensor_msgs/msg/MultiDOFJointState.msg std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Vector3:geometry_msgs/Transform:geometry_msgs/Wrench:geometry_msgs/Twist
 
 _sensor_msgs_generate_messages_check_deps_MultiDOFJointState: sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState
 _sensor_msgs_generate_messages_check_deps_MultiDOFJointState: sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/build.make
@@ -67,10 +67,10 @@ sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointSt
 .PHONY : sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/build
 
 sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/cmake_clean.cmake
+	cd /home/ubuntu/btp_catkin/build/sensor_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/cmake_clean.cmake
 .PHONY : sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/clean
 
 sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/btp_catkin/src /home/ubuntu/btp_catkin/src/sensor_msgs /home/ubuntu/btp_catkin/build /home/ubuntu/btp_catkin/build/sensor_msgs /home/ubuntu/btp_catkin/build/sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_MultiDOFJointState.dir/depend
 

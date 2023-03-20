@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/akshat/ProjectROS/catkin_ws/devel/include/sensor_msgs/LaserScan.h
+/home/ubuntu/btp_catkin/devel/include/sensor_msgs/LaserScan.h
 string
 -
 vector
@@ -24,11 +24,11 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/akshat/ProjectROS/catkin_ws/src/rplidar_ros/src/client.cpp
+/home/ubuntu/btp_catkin/src/rplidar_ros/src/client.cpp
 ros/ros.h
-/home/akshat/ProjectROS/catkin_ws/src/rplidar_ros/src/ros/ros.h
+/home/ubuntu/btp_catkin/src/rplidar_ros/src/ros/ros.h
 sensor_msgs/LaserScan.h
-/home/akshat/ProjectROS/catkin_ws/src/rplidar_ros/src/sensor_msgs/LaserScan.h
+/home/ubuntu/btp_catkin/src/rplidar_ros/src/sensor_msgs/LaserScan.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

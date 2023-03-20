@@ -1,2 +1,2 @@
-set(rosserial_msgs_MESSAGE_FILES "/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_msgs/msg/Log.msg;/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_msgs/msg/TopicInfo.msg")
-set(rosserial_msgs_SERVICE_FILES "/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_msgs/srv/RequestParam.srv")
+set(rosserial_msgs_MESSAGE_FILES "/home/ubuntu/btp_catkin/src/rosserial/rosserial_msgs/msg/Log.msg;/home/ubuntu/btp_catkin/src/rosserial/rosserial_msgs/msg/TopicInfo.msg")
+set(rosserial_msgs_SERVICE_FILES "/home/ubuntu/btp_catkin/src/rosserial/rosserial_msgs/srv/RequestParam.srv")

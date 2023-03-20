@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/btp_catkin/build
 
 # Include any dependencies generated for this target.
 include sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/depend.make
@@ -58,17 +58,17 @@ include sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/progres
 include sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/flags.make
 
 sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o: sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/flags.make
-sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o: /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/test/test_image_encodings.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/akshat/ProjectROS/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o"
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o -c /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/test/test_image_encodings.cpp
+sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o: /home/ubuntu/btp_catkin/src/sensor_msgs/test/test_image_encodings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/btp_catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o"
+	cd /home/ubuntu/btp_catkin/build/sensor_msgs/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o -c /home/ubuntu/btp_catkin/src/sensor_msgs/test/test_image_encodings.cpp
 
 sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.i"
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/test/test_image_encodings.cpp > CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.i
+	cd /home/ubuntu/btp_catkin/build/sensor_msgs/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/btp_catkin/src/sensor_msgs/test/test_image_encodings.cpp > CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.i
 
 sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.s"
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/test/test_image_encodings.cpp -o CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.s
+	cd /home/ubuntu/btp_catkin/build/sensor_msgs/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/btp_catkin/src/sensor_msgs/test/test_image_encodings.cpp -o CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.s
 
 # Object files for target sensor_msgs_test_image_encodings
 sensor_msgs_test_image_encodings_OBJECTS = \
@@ -77,23 +77,23 @@ sensor_msgs_test_image_encodings_OBJECTS = \
 # External object files for target sensor_msgs_test_image_encodings
 sensor_msgs_test_image_encodings_EXTERNAL_OBJECTS =
 
-/home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings: sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o
-/home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings: sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/build.make
-/home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings: gtest/lib/libgtest.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings: sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/akshat/ProjectROS/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings"
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sensor_msgs_test_image_encodings.dir/link.txt --verbose=$(VERBOSE)
+/home/ubuntu/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings: sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o
+/home/ubuntu/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings: sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/build.make
+/home/ubuntu/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings: gtest/lib/libgtest.so
+/home/ubuntu/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings: sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/btp_catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ubuntu/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings"
+	cd /home/ubuntu/btp_catkin/build/sensor_msgs/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sensor_msgs_test_image_encodings.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/build: /home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings
+sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/build: /home/ubuntu/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings
 
 .PHONY : sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/build
 
 sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_test_image_encodings.dir/cmake_clean.cmake
+	cd /home/ubuntu/btp_catkin/build/sensor_msgs/test && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_test_image_encodings.dir/cmake_clean.cmake
 .PHONY : sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/clean
 
 sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/test /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/btp_catkin/src /home/ubuntu/btp_catkin/src/sensor_msgs/test /home/ubuntu/btp_catkin/build /home/ubuntu/btp_catkin/build/sensor_msgs/test /home/ubuntu/btp_catkin/build/sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sensor_msgs/test/CMakeFiles/sensor_msgs_test_image_encodings.dir/depend
 

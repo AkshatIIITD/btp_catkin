@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/common-lisp/ros/rosserial_mbed/msg/Adc.lisp"
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/common-lisp/ros/rosserial_mbed/srv/Test.lisp"
+  "/home/ubuntu/btp_catkin/devel/share/common-lisp/ros/rosserial_mbed/msg/Adc.lisp"
+  "/home/ubuntu/btp_catkin/devel/share/common-lisp/ros/rosserial_mbed/srv/Test.lisp"
   "CMakeFiles/rosserial_mbed_generate_messages_lisp"
 )
 

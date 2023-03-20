@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/btp_catkin/build
 
 # Utility rule file for run_tests_rosserial_client_gtest_subscriber_test.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
 include rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/progress.make
 
 rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_client && ../../catkin_generated/env_cached.sh /home/akshat/ProjectROS/envir/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/run_tests.py /home/akshat/ProjectROS/catkin_ws/build/test_results/rosserial_client/gtest-subscriber_test.xml "/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_client/subscriber_test --gtest_output=xml:/home/akshat/ProjectROS/catkin_ws/build/test_results/rosserial_client/gtest-subscriber_test.xml"
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_client && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/run_tests.py /home/ubuntu/btp_catkin/build/test_results/rosserial_client/gtest-subscriber_test.xml "/home/ubuntu/btp_catkin/devel/lib/rosserial_client/subscriber_test --gtest_output=xml:/home/ubuntu/btp_catkin/build/test_results/rosserial_client/gtest-subscriber_test.xml"
 
 run_tests_rosserial_client_gtest_subscriber_test: rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test
 run_tests_rosserial_client_gtest_subscriber_test: rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/build.make
@@ -67,10 +67,10 @@ rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscribe
 .PHONY : rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/build
 
 rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_client && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/cmake_clean.cmake
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_client && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/cmake_clean.cmake
 .PHONY : rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/clean
 
 rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_client /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_client /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/btp_catkin/src /home/ubuntu/btp_catkin/src/rosserial/rosserial_client /home/ubuntu/btp_catkin/build /home/ubuntu/btp_catkin/build/rosserial/rosserial_client /home/ubuntu/btp_catkin/build/rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rosserial/rosserial_client/CMakeFiles/run_tests_rosserial_client_gtest_subscriber_test.dir/depend
 

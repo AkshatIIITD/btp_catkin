@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"rosserial_server\" -Drosserial_server_lookup_EXPORTS
 
-CXX_INCLUDES = -I/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server/include -I/home/akshat/ProjectROS/catkin_ws/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/python3.8 
+CXX_INCLUDES = -I/home/ubuntu/btp_catkin/src/rosserial/rosserial_server/include -I/home/ubuntu/btp_catkin/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/python3.8 
 

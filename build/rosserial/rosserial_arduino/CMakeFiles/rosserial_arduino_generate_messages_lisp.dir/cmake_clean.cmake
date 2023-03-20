@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/common-lisp/ros/rosserial_arduino/msg/Adc.lisp"
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/common-lisp/ros/rosserial_arduino/srv/Test.lisp"
+  "/home/ubuntu/btp_catkin/devel/share/common-lisp/ros/rosserial_arduino/msg/Adc.lisp"
+  "/home/ubuntu/btp_catkin/devel/share/common-lisp/ros/rosserial_arduino/srv/Test.lisp"
   "CMakeFiles/rosserial_arduino_generate_messages_lisp"
 )
 

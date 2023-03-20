@@ -1,8 +1,8 @@
-# Install script for directory: /home/akshat/ProjectROS/catkin_ws/src
+# Install script for directory: /home/ubuntu/btp_catkin/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/akshat/ProjectROS/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/btp_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,127 +49,109 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/akshat/ProjectROS/catkin_ws/install/_setup_util.py")
+   "/home/ubuntu/btp_catkin/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/akshat/ProjectROS/catkin_ws/install" TYPE PROGRAM FILES "/home/akshat/ProjectROS/catkin_ws/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/ubuntu/btp_catkin/install" TYPE PROGRAM FILES "/home/ubuntu/btp_catkin/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/akshat/ProjectROS/catkin_ws/install/env.sh")
+   "/home/ubuntu/btp_catkin/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/akshat/ProjectROS/catkin_ws/install" TYPE PROGRAM FILES "/home/akshat/ProjectROS/catkin_ws/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/ubuntu/btp_catkin/install" TYPE PROGRAM FILES "/home/ubuntu/btp_catkin/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/akshat/ProjectROS/catkin_ws/install/setup.bash;/home/akshat/ProjectROS/catkin_ws/install/local_setup.bash")
+   "/home/ubuntu/btp_catkin/install/setup.bash;/home/ubuntu/btp_catkin/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/akshat/ProjectROS/catkin_ws/install" TYPE FILE FILES
-    "/home/akshat/ProjectROS/catkin_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/akshat/ProjectROS/catkin_ws/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/ubuntu/btp_catkin/install" TYPE FILE FILES
+    "/home/ubuntu/btp_catkin/build/catkin_generated/installspace/setup.bash"
+    "/home/ubuntu/btp_catkin/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/akshat/ProjectROS/catkin_ws/install/setup.sh;/home/akshat/ProjectROS/catkin_ws/install/local_setup.sh")
+   "/home/ubuntu/btp_catkin/install/setup.sh;/home/ubuntu/btp_catkin/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/akshat/ProjectROS/catkin_ws/install" TYPE FILE FILES
-    "/home/akshat/ProjectROS/catkin_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/akshat/ProjectROS/catkin_ws/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/ubuntu/btp_catkin/install" TYPE FILE FILES
+    "/home/ubuntu/btp_catkin/build/catkin_generated/installspace/setup.sh"
+    "/home/ubuntu/btp_catkin/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/akshat/ProjectROS/catkin_ws/install/setup.zsh;/home/akshat/ProjectROS/catkin_ws/install/local_setup.zsh")
+   "/home/ubuntu/btp_catkin/install/setup.zsh;/home/ubuntu/btp_catkin/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/akshat/ProjectROS/catkin_ws/install" TYPE FILE FILES
-    "/home/akshat/ProjectROS/catkin_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/akshat/ProjectROS/catkin_ws/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/ubuntu/btp_catkin/install" TYPE FILE FILES
+    "/home/ubuntu/btp_catkin/build/catkin_generated/installspace/setup.zsh"
+    "/home/ubuntu/btp_catkin/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/akshat/ProjectROS/catkin_ws/install/.rosinstall")
+   "/home/ubuntu/btp_catkin/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/akshat/ProjectROS/catkin_ws/install" TYPE FILE FILES "/home/akshat/ProjectROS/catkin_ws/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/ubuntu/btp_catkin/install" TYPE FILE FILES "/home/ubuntu/btp_catkin/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/akshat/ProjectROS/catkin_ws/build/gtest/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_geotiff_launch/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_slam/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_slam_launch/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/my_nav/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_arduino/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_chibios/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_mbed/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_msgs/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_python/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_tivac/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_vex_cortex/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_vex_v5/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_xbee/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_client/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/slam_gmapping/slam_gmapping/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_map_tools/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_nav_msgs/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_geotiff/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_geotiff_plugins/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_marker_drawing/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_compressed_map_transport/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rplidar_ros/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_server/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/slam_gmapping/gmapping/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_imu_attitude_to_tf/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_imu_tools/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_map_server/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_trajectory_server/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/lidarbot/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rf2o_laser_odometry/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_embeddedlinux/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_test/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_windows/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_mapping/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/anrol/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/navros_pkg/cmake_install.cmake")
-  include("/home/akshat/ProjectROS/catkin_ws/build/using_markers/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/gtest/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/my_nav/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_arduino/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_chibios/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_mbed/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_msgs/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_python/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_tivac/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_vex_cortex/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_vex_v5/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_xbee/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_client/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/sensor_msgs/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rplidar_ros/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_server/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rf2o_laser_odometry/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_embeddedlinux/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_test/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/rosserial/rosserial_windows/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/anrol/cmake_install.cmake")
+  include("/home/ubuntu/btp_catkin/build/using_markers/cmake_install.cmake")
 
 endif()
 
@@ -181,5 +163,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/akshat/ProjectROS/catkin_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/btp_catkin/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/include/rosserial_arduino/Adc.h"
-  "/home/akshat/ProjectROS/catkin_ws/devel/include/rosserial_arduino/Test.h"
+  "/home/ubuntu/btp_catkin/devel/include/rosserial_arduino/Adc.h"
+  "/home/ubuntu/btp_catkin/devel/include/rosserial_arduino/Test.h"
   "CMakeFiles/rosserial_arduino_generate_messages_cpp"
 )
 

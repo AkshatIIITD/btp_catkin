@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node.pdb"
+  "/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node"
+  "/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node.pdb"
   "CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o"
 )
 

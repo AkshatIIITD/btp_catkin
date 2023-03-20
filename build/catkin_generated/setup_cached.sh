@@ -7,4 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/akshat/ProjectROS/catkin_ws/build'
+export CMAKE_PREFIX_PATH="/home/ubuntu/btp_catkin/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/ubuntu/btp_catkin/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/ubuntu/btp_catkin/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/ubuntu/btp_catkin/build'
+export PYTHONPATH="/home/ubuntu/btp_catkin/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/ubuntu/btp_catkin/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/ubuntu/btp_catkin/src:$ROS_PACKAGE_PATH"

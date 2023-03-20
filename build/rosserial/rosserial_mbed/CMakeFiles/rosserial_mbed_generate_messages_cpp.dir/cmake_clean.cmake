@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/include/rosserial_mbed/Adc.h"
-  "/home/akshat/ProjectROS/catkin_ws/devel/include/rosserial_mbed/Test.h"
+  "/home/ubuntu/btp_catkin/devel/include/rosserial_mbed/Adc.h"
+  "/home/ubuntu/btp_catkin/devel/include/rosserial_mbed/Test.h"
   "CMakeFiles/rosserial_mbed_generate_messages_cpp"
 )
 

@@ -1,9 +1,9 @@
-#!/home/akshat/ProjectROS/envir/bin/python3
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 # generated from catkin/cmake/template/script.py.in
 # creates a relay to a python script source file, acting as that file.
 # The purpose is that of a symlink
-python_script = '/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_python/nodes/message_info_service.py'
+python_script = '/home/ubuntu/btp_catkin/src/rosserial/rosserial_python/nodes/message_info_service.py'
 with open(python_script, 'r') as fh:
     context = {
         '__builtins__': __builtins__,

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/btp_catkin/build
 
 # Utility rule file for clean_test_results_rosserial_client.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
 include rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/progress.make
 
 rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_client && /home/akshat/ProjectROS/envir/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/akshat/ProjectROS/catkin_ws/build/test_results/rosserial_client
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_client && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/ubuntu/btp_catkin/build/test_results/rosserial_client
 
 clean_test_results_rosserial_client: rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client
 clean_test_results_rosserial_client: rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/build.make
@@ -67,10 +67,10 @@ rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/bu
 .PHONY : rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/build
 
 rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_client && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_rosserial_client.dir/cmake_clean.cmake
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_client && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_rosserial_client.dir/cmake_clean.cmake
 .PHONY : rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/clean
 
 rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_client /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_client /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/btp_catkin/src /home/ubuntu/btp_catkin/src/rosserial/rosserial_client /home/ubuntu/btp_catkin/build /home/ubuntu/btp_catkin/build/rosserial/rosserial_client /home/ubuntu/btp_catkin/build/rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rosserial/rosserial_client/CMakeFiles/clean_test_results_rosserial_client.dir/depend
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/msg/Log.js"
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/msg/TopicInfo.js"
-  "/home/akshat/ProjectROS/catkin_ws/devel/share/gennodejs/ros/rosserial_msgs/srv/RequestParam.js"
+  "/home/ubuntu/btp_catkin/devel/share/gennodejs/ros/rosserial_msgs/msg/Log.js"
+  "/home/ubuntu/btp_catkin/devel/share/gennodejs/ros/rosserial_msgs/msg/TopicInfo.js"
+  "/home/ubuntu/btp_catkin/devel/share/gennodejs/ros/rosserial_msgs/srv/RequestParam.js"
   "CMakeFiles/rosserial_msgs_generate_messages_nodejs"
 )
 
