@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>my_nav</name>
+  <version>1.2.6</version>
+  <description>
+    My version of turtlebot3_navigation for my BTP with Yash Agrawal.
+  </description>
+  <license>TODO</license>
+  <author>Akshat</author>
+  <maintainer email="akshat@todo.todo">Akshat</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>amcl</exec_depend>
+  <exec_depend>map_server</exec_depend>
+  <exec_depend>move_base</exec_depend>
+  <exec_depend>turtlebot3_bringup</exec_depend>
+</package>
