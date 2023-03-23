@@ -365,6 +365,9 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests3
 
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=/usr/lib/arm-linux-gnueabihf/cmake/opencv4
+
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3
 
@@ -388,6 +391,8 @@ Project_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src
+
+QT_QMAKE_EXECUTABLE:FILEPATH=/usr/bin/qmake
 
 //Path to a library.
 RT_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/librt.so
@@ -446,11 +451,17 @@ boost_thread_DIR:PATH=/usr/lib/arm-linux-gnueabihf/cmake/boost_thread-1.71.0
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/noetic/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cmake_modules.
 cmake_modules_DIR:PATH=/opt/ros/noetic/share/cmake_modules/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for cv_bridge.
+cv_bridge_DIR:PATH=/opt/ros/noetic/share/cv_bridge/cmake
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/noetic/share/gencpp/cmake
@@ -472,6 +483,9 @@ genpy_DIR:PATH=/opt/ros/noetic/share/genpy/cmake
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/noetic/share/geometry_msgs/cmake
+
+//Dependencies for the target
+geotiff_writer_LIB_DEPENDS:STATIC=general;/opt/ros/noetic/lib/libclass_loader.so;general;/usr/lib/arm-linux-gnueabihf/libPocoFoundation.so;general;/usr/lib/arm-linux-gnueabihf/libdl.so;general;/opt/ros/noetic/lib/libroslib.so;general;/opt/ros/noetic/lib/librospack.so;general;/usr/lib/arm-linux-gnueabihf/libpython3.8.so;general;/usr/lib/arm-linux-gnueabihf/libboost_program_options.so.1.71.0;general;/usr/lib/arm-linux-gnueabihf/libtinyxml2.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/arm-linux-gnueabihf/libpthread.so;general;/usr/lib/arm-linux-gnueabihf/libboost_chrono.so.1.71.0;general;/usr/lib/arm-linux-gnueabihf/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/arm-linux-gnueabihf/liblog4cxx.so;general;/usr/lib/arm-linux-gnueabihf/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/arm-linux-gnueabihf/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/arm-linux-gnueabihf/libboost_system.so.1.71.0;general;/usr/lib/arm-linux-gnueabihf/libboost_thread.so.1.71.0;general;/usr/lib/arm-linux-gnueabihf/libconsole_bridge.so.0.4;
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/gtest/googlemock
@@ -519,8 +533,107 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
+//Value Computed by CMake
+hector_compressed_map_transport_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_compressed_map_transport
+
+//Value Computed by CMake
+hector_compressed_map_transport_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_compressed_map_transport
+
+//Value Computed by CMake
+hector_geotiff_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_geotiff
+
+//The directory containing a CMake configuration file for hector_geotiff.
+hector_geotiff_DIR:PATH=/home/ubuntu/btp_catkin/devel/share/hector_geotiff/cmake
+
+//Value Computed by CMake
+hector_geotiff_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_geotiff
+
+//Value Computed by CMake
+hector_geotiff_plugins_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_geotiff_plugins
+
+//Dependencies for the target
+hector_geotiff_plugins_LIB_DEPENDS:STATIC=general;geotiff_writer;general;/opt/ros/noetic/lib/libclass_loader.so;general;/usr/lib/arm-linux-gnueabihf/libPocoFoundation.so;general;/usr/lib/arm-linux-gnueabihf/libdl.so;general;/opt/ros/noetic/lib/libroslib.so;general;/opt/ros/noetic/lib/librospack.so;general;/usr/lib/arm-linux-gnueabihf/libpython3.8.so;general;/usr/lib/arm-linux-gnueabihf/libboost_program_options.so.1.71.0;general;/usr/lib/arm-linux-gnueabihf/libtinyxml2.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/arm-linux-gnueabihf/libpthread.so;general;/usr/lib/arm-linux-gnueabihf/libboost_chrono.so.1.71.0;general;/usr/lib/arm-linux-gnueabihf/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/arm-linux-gnueabihf/liblog4cxx.so;general;/usr/lib/arm-linux-gnueabihf/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/arm-linux-gnueabihf/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/arm-linux-gnueabihf/libboost_system.so.1.71.0;general;/usr/lib/arm-linux-gnueabihf/libboost_thread.so.1.71.0;general;/usr/lib/arm-linux-gnueabihf/libconsole_bridge.so.0.4;
+
+//Value Computed by CMake
+hector_geotiff_plugins_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_geotiff_plugins
+
+//Value Computed by CMake
+hector_imu_attitude_to_tf_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_imu_attitude_to_tf
+
+//Value Computed by CMake
+hector_imu_attitude_to_tf_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_imu_attitude_to_tf
+
+//Value Computed by CMake
+hector_imu_tools_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_imu_tools
+
+//Value Computed by CMake
+hector_imu_tools_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_imu_tools
+
+//Value Computed by CMake
+hector_map_server_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_map_server
+
+//Value Computed by CMake
+hector_map_server_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_map_server
+
+//Value Computed by CMake
+hector_map_tools_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_map_tools
+
+//The directory containing a CMake configuration file for hector_map_tools.
+hector_map_tools_DIR:PATH=/home/ubuntu/btp_catkin/devel/share/hector_map_tools/cmake
+
+//Value Computed by CMake
+hector_map_tools_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_map_tools
+
+//Value Computed by CMake
+hector_mapping_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_mapping
+
+//Value Computed by CMake
+hector_mapping_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_mapping
+
+//Value Computed by CMake
+hector_marker_drawing_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_marker_drawing
+
+//The directory containing a CMake configuration file for hector_marker_drawing.
+hector_marker_drawing_DIR:PATH=/home/ubuntu/btp_catkin/devel/share/hector_marker_drawing/cmake
+
+//Value Computed by CMake
+hector_marker_drawing_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_marker_drawing
+
+//Value Computed by CMake
+hector_nav_msgs_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_nav_msgs
+
+//The directory containing a CMake configuration file for hector_nav_msgs.
+hector_nav_msgs_DIR:PATH=/home/ubuntu/btp_catkin/devel/share/hector_nav_msgs/cmake
+
+//Value Computed by CMake
+hector_nav_msgs_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_nav_msgs
+
+//Value Computed by CMake
+hector_slam_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_slam
+
+//Value Computed by CMake
+hector_slam_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_slam
+
+//Value Computed by CMake
+hector_slam_launch_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_slam_launch
+
+//Value Computed by CMake
+hector_slam_launch_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_slam_launch
+
+//Value Computed by CMake
+hector_trajectory_server_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/hector_slam/hector_trajectory_server
+
+//Value Computed by CMake
+hector_trajectory_server_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/hector_slam/hector_trajectory_server
+
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/noetic/share/image_transport/cmake
+
+//The directory containing a CMake configuration file for laser_geometry.
+laser_geometry_DIR:PATH=/opt/ros/noetic/share/laser_geometry/cmake
+
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/noetic/lib/liblaser_geometry.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
@@ -539,6 +652,9 @@ my_nav_SOURCE_DIR:STATIC=/home/ubuntu/btp_catkin/src/my_nav
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/noetic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
 
 //Value Computed by CMake
 rf2o_laser_odometry_BINARY_DIR:STATIC=/home/ubuntu/btp_catkin/build/rf2o_laser_odometry
@@ -566,6 +682,12 @@ rosgraph_DIR:PATH=/opt/ros/noetic/share/rosgraph/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/noetic/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/noetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/noetic/share/rospack/cmake
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/noetic/share/rospy/cmake
@@ -713,6 +835,9 @@ tf2_ros_DIR:PATH=/opt/ros/noetic/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/noetic/share/tf/cmake
+
+//The directory containing a CMake configuration file for tf_conversions.
+tf_conversions_DIR:PATH=tf_conversions_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for topic_tools.
 topic_tools_DIR:PATH=/opt/ros/noetic/share/topic_tools/cmake
@@ -879,7 +1004,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=37
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -924,6 +1049,8 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Boost
 FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/arm-linux-gnueabihf/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: system ][v1.71.0()]
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.2.0()]
 //Details about finding PY_em
 FIND_PACKAGE_MESSAGE_DETAILS_PY_em:INTERNAL=[/usr/lib/python3/dist-packages/em.py][v()]
 //Details about finding PythonInterp

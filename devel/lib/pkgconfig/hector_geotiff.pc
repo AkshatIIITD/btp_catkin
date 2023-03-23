@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/btp_catkin/devel
+
+Name: hector_geotiff
+Description: Description of hector_geotiff
+Version: 0.3.5
+Cflags: -I/home/ubuntu/btp_catkin/src/hector_slam/hector_geotiff/include
+Libs: -L${prefix}/lib -lgeotiff_writer
+Requires: hector_map_tools hector_nav_msgs nav_msgs pluginlib roscpp std_msgs
