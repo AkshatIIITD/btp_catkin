@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/btp_catkin/build
 
 # Include any dependencies generated for this target.
 include rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/depend.make
@@ -58,17 +58,17 @@ include rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/p
 include rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/flags.make
 
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o: rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/flags.make
-rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o: /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server/src/serial_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/akshat/ProjectROS/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o"
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o -c /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server/src/serial_node.cpp
+rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o: /home/ubuntu/btp_catkin/src/rosserial/rosserial_server/src/serial_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/btp_catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o"
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o -c /home/ubuntu/btp_catkin/src/rosserial/rosserial_server/src/serial_node.cpp
 
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.i"
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server/src/serial_node.cpp > CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.i
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/btp_catkin/src/rosserial/rosserial_server/src/serial_node.cpp > CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.i
 
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.s"
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server/src/serial_node.cpp -o CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.s
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/btp_catkin/src/rosserial/rosserial_server/src/serial_node.cpp -o CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.s
 
 # Object files for target rosserial_server_serial_node
 rosserial_server_serial_node_OBJECTS = \
@@ -77,42 +77,42 @@ rosserial_server_serial_node_OBJECTS = \
 # External object files for target rosserial_server_serial_node
 rosserial_server_serial_node_EXTERNAL_OBJECTS =
 
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/libtopic_tools.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/libroscpp.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/librosconsole.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/librostime.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /home/akshat/ProjectROS/catkin_ws/devel/lib/librosserial_server_lookup.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node: rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/akshat/ProjectROS/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node"
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rosserial_server_serial_node.dir/link.txt --verbose=$(VERBOSE)
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/src/serial_node.cpp.o
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build.make
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/libtopic_tools.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/libroscpp.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /usr/lib/arm-linux-gnueabihf/libpthread.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /usr/lib/arm-linux-gnueabihf/libboost_chrono.so.1.71.0
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /usr/lib/arm-linux-gnueabihf/libboost_filesystem.so.1.71.0
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/librosconsole.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /usr/lib/arm-linux-gnueabihf/liblog4cxx.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /usr/lib/arm-linux-gnueabihf/libboost_regex.so.1.71.0
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/librostime.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /usr/lib/arm-linux-gnueabihf/libboost_date_time.so.1.71.0
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /usr/lib/arm-linux-gnueabihf/libboost_system.so.1.71.0
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /usr/lib/arm-linux-gnueabihf/libboost_thread.so.1.71.0
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /usr/lib/arm-linux-gnueabihf/libconsole_bridge.so.0.4
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /home/ubuntu/btp_catkin/devel/lib/librosserial_server_lookup.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: /usr/lib/arm-linux-gnueabihf/libpython3.8.so
+/home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node: rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/btp_catkin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node"
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rosserial_server_serial_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build: /home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_server/serial_node
+rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build: /home/ubuntu/btp_catkin/devel/lib/rosserial_server/serial_node
 
 .PHONY : rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/build
 
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_server && $(CMAKE_COMMAND) -P CMakeFiles/rosserial_server_serial_node.dir/cmake_clean.cmake
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_server && $(CMAKE_COMMAND) -P CMakeFiles/rosserial_server_serial_node.dir/cmake_clean.cmake
 .PHONY : rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/clean
 
 rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_server /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/btp_catkin/src /home/ubuntu/btp_catkin/src/rosserial/rosserial_server /home/ubuntu/btp_catkin/build /home/ubuntu/btp_catkin/build/rosserial/rosserial_server /home/ubuntu/btp_catkin/build/rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rosserial/rosserial_server/CMakeFiles/rosserial_server_serial_node.dir/depend
 

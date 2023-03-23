@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_client"
+echo_and_run cd "/home/ubuntu/btp_catkin/src/rosserial/rosserial_client"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/akshat/ProjectROS/catkin_ws/install/lib/python3/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/ubuntu/btp_catkin/install/lib/python3/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/akshat/ProjectROS/catkin_ws/install/lib/python3/dist-packages:/home/akshat/ProjectROS/catkin_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/akshat/ProjectROS/catkin_ws/build" \
-    "/home/akshat/ProjectROS/envir/bin/python3" \
-    "/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_client/setup.py" \
+    PYTHONPATH="/home/ubuntu/btp_catkin/install/lib/python3/dist-packages:/home/ubuntu/btp_catkin/build/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/ubuntu/btp_catkin/build" \
+    "/usr/bin/python3" \
+    "/home/ubuntu/btp_catkin/src/rosserial/rosserial_client/setup.py" \
      \
-    build --build-base "/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_client" \
+    build --build-base "/home/ubuntu/btp_catkin/build/rosserial/rosserial_client" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/home/akshat/ProjectROS/catkin_ws/install" --install-scripts="/home/akshat/ProjectROS/catkin_ws/install/bin"
+    --install-layout=deb --prefix="/home/ubuntu/btp_catkin/install" --install-scripts="/home/ubuntu/btp_catkin/install/bin"

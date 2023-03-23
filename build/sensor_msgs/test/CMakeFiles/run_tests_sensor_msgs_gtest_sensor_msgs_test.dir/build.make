@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/btp_catkin/build
 
 # Utility rule file for run_tests_sensor_msgs_gtest_sensor_msgs_test.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
 include sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/progress.make
 
 sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test:
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test && ../../catkin_generated/env_cached.sh /home/akshat/ProjectROS/envir/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/run_tests.py /home/akshat/ProjectROS/catkin_ws/build/test_results/sensor_msgs/gtest-sensor_msgs_test.xml "/home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test --gtest_output=xml:/home/akshat/ProjectROS/catkin_ws/build/test_results/sensor_msgs/gtest-sensor_msgs_test.xml"
+	cd /home/ubuntu/btp_catkin/build/sensor_msgs/test && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/run_tests.py /home/ubuntu/btp_catkin/build/test_results/sensor_msgs/gtest-sensor_msgs_test.xml "/home/ubuntu/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test --gtest_output=xml:/home/ubuntu/btp_catkin/build/test_results/sensor_msgs/gtest-sensor_msgs_test.xml"
 
 run_tests_sensor_msgs_gtest_sensor_msgs_test: sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test
 run_tests_sensor_msgs_gtest_sensor_msgs_test: sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/build.make
@@ -67,10 +67,10 @@ sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/bui
 .PHONY : sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/build
 
 sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/cmake_clean.cmake
+	cd /home/ubuntu/btp_catkin/build/sensor_msgs/test && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/cmake_clean.cmake
 .PHONY : sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/clean
 
 sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/test /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/btp_catkin/src /home/ubuntu/btp_catkin/src/sensor_msgs/test /home/ubuntu/btp_catkin/build /home/ubuntu/btp_catkin/build/sensor_msgs/test /home/ubuntu/btp_catkin/build/sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sensor_msgs/test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/akshat/ProjectROS/catkin_ws/src/rf2o_laser_odometry
+# Install script for directory: /home/ubuntu/btp_catkin/src/rf2o_laser_odometry
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/akshat/ProjectROS/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/btp_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/akshat/ProjectROS/catkin_ws/build/rf2o_laser_odometry/catkin_generated/installspace/rf2o_laser_odometry.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/btp_catkin/build/rf2o_laser_odometry/catkin_generated/installspace/rf2o_laser_odometry.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rf2o_laser_odometry/cmake" TYPE FILE FILES
-    "/home/akshat/ProjectROS/catkin_ws/build/rf2o_laser_odometry/catkin_generated/installspace/rf2o_laser_odometryConfig.cmake"
-    "/home/akshat/ProjectROS/catkin_ws/build/rf2o_laser_odometry/catkin_generated/installspace/rf2o_laser_odometryConfig-version.cmake"
+    "/home/ubuntu/btp_catkin/build/rf2o_laser_odometry/catkin_generated/installspace/rf2o_laser_odometryConfig.cmake"
+    "/home/ubuntu/btp_catkin/build/rf2o_laser_odometry/catkin_generated/installspace/rf2o_laser_odometryConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rf2o_laser_odometry" TYPE FILE FILES "/home/akshat/ProjectROS/catkin_ws/src/rf2o_laser_odometry/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rf2o_laser_odometry" TYPE FILE FILES "/home/ubuntu/btp_catkin/src/rf2o_laser_odometry/package.xml")
 endif()
 

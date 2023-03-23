@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/akshat/ProjectROS/catkin_ws/devel/setup.sh
+    local-name: /home/ubuntu/btp_catkin/devel/setup.sh

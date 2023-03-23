@@ -1,4 +1,4 @@
-prefix=/home/akshat/ProjectROS/catkin_ws/install
+prefix=/home/ubuntu/btp_catkin/install
 
 Name: my_nav
 Description: Description of my_nav

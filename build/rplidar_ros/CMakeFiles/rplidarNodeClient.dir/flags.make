@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11  -O3 -DNDEBUG
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"rplidar_ros\"
 
-CXX_INCLUDES = -I/home/akshat/ProjectROS/catkin_ws/src/rplidar_ros/./sdk/include -I/home/akshat/ProjectROS/catkin_ws/src/rplidar_ros/./sdk/src -I/home/akshat/ProjectROS/catkin_ws/devel/include -I/home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/ubuntu/btp_catkin/src/rplidar_ros/./sdk/include -I/home/ubuntu/btp_catkin/src/rplidar_ros/./sdk/src -I/home/ubuntu/btp_catkin/devel/include -I/home/ubuntu/btp_catkin/src/sensor_msgs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

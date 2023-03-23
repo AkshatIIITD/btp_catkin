@@ -67,14 +67,14 @@ set(rf2o_laser_odometry_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(rf2o_laser_odometry_SOURCE_PREFIX /home/akshat/ProjectROS/catkin_ws/src/rf2o_laser_odometry)
-  set(rf2o_laser_odometry_DEVEL_PREFIX /home/akshat/ProjectROS/catkin_ws/devel)
+  set(rf2o_laser_odometry_SOURCE_PREFIX /home/ubuntu/btp_catkin/src/rf2o_laser_odometry)
+  set(rf2o_laser_odometry_DEVEL_PREFIX /home/ubuntu/btp_catkin/devel)
   set(rf2o_laser_odometry_INSTALL_PREFIX "")
   set(rf2o_laser_odometry_PREFIX ${rf2o_laser_odometry_DEVEL_PREFIX})
 else()
   set(rf2o_laser_odometry_SOURCE_PREFIX "")
   set(rf2o_laser_odometry_DEVEL_PREFIX "")
-  set(rf2o_laser_odometry_INSTALL_PREFIX /home/akshat/ProjectROS/catkin_ws/install)
+  set(rf2o_laser_odometry_INSTALL_PREFIX /home/ubuntu/btp_catkin/install)
   set(rf2o_laser_odometry_PREFIX ${rf2o_laser_odometry_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/akshat/ProjectROS/catkin_ws/install/lib;/home/akshat/ProjectROS/Robotics_ws/devel/lib;/home/akshat/ProjectROS/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ubuntu/btp_catkin/install/lib;/home/ubuntu/btp_catkin/devel/lib;/home/ubuntu/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

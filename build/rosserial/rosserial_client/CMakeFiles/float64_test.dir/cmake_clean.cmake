@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_client/float64_test"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_client/float64_test.pdb"
+  "/home/ubuntu/btp_catkin/devel/lib/rosserial_client/float64_test"
+  "/home/ubuntu/btp_catkin/devel/lib/rosserial_client/float64_test.pdb"
   "CMakeFiles/float64_test.dir/test/float64_test.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/librosserial_server_lookup.pdb"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/librosserial_server_lookup.so"
+  "/home/ubuntu/btp_catkin/devel/lib/librosserial_server_lookup.pdb"
+  "/home/ubuntu/btp_catkin/devel/lib/librosserial_server_lookup.so"
   "CMakeFiles/rosserial_server_lookup.dir/src/msg_lookup.cpp.o"
 )
 

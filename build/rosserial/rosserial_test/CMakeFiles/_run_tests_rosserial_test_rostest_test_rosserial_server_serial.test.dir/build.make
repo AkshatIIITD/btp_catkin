@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/btp_catkin/build
 
 # Utility rule file for _run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
 include rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/progress.make
 
 rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_test && ../../catkin_generated/env_cached.sh /home/akshat/ProjectROS/envir/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/run_tests.py /home/akshat/ProjectROS/catkin_ws/build/test_results/rosserial_test/rostest-test_rosserial_server_serial.xml "/home/akshat/ProjectROS/envir/bin/python3 /opt/ros/noetic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_test --package=rosserial_test --results-filename test_rosserial_server_serial.xml --results-base-dir \"/home/akshat/ProjectROS/catkin_ws/build/test_results\" /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_test/test/rosserial_server_serial.test "
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_test && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/run_tests.py /home/ubuntu/btp_catkin/build/test_results/rosserial_test/rostest-test_rosserial_server_serial.xml "/usr/bin/python3 /opt/ros/noetic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/ubuntu/btp_catkin/src/rosserial/rosserial_test --package=rosserial_test --results-filename test_rosserial_server_serial.xml --results-base-dir \"/home/ubuntu/btp_catkin/build/test_results\" /home/ubuntu/btp_catkin/src/rosserial/rosserial_test/test/rosserial_server_serial.test "
 
 _run_tests_rosserial_test_rostest_test_rosserial_server_serial.test: rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test
 _run_tests_rosserial_test_rostest_test_rosserial_server_serial.test: rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build.make
@@ -67,10 +67,10 @@ rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosse
 .PHONY : rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/build
 
 rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_test && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/cmake_clean.cmake
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_test && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/cmake_clean.cmake
 .PHONY : rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/clean
 
 rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_test /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_test /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/btp_catkin/src /home/ubuntu/btp_catkin/src/rosserial/rosserial_test /home/ubuntu/btp_catkin/build /home/ubuntu/btp_catkin/build/rosserial/rosserial_test /home/ubuntu/btp_catkin/build/rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rosserial/rosserial_test/CMakeFiles/_run_tests_rosserial_test_rostest_test_rosserial_server_serial.test.dir/depend
 

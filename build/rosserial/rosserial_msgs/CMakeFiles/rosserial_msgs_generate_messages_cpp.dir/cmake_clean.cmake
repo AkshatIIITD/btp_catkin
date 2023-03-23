@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/include/rosserial_msgs/Log.h"
-  "/home/akshat/ProjectROS/catkin_ws/devel/include/rosserial_msgs/RequestParam.h"
-  "/home/akshat/ProjectROS/catkin_ws/devel/include/rosserial_msgs/TopicInfo.h"
+  "/home/ubuntu/btp_catkin/devel/include/rosserial_msgs/Log.h"
+  "/home/ubuntu/btp_catkin/devel/include/rosserial_msgs/RequestParam.h"
+  "/home/ubuntu/btp_catkin/devel/include/rosserial_msgs/TopicInfo.h"
   "CMakeFiles/rosserial_msgs_generate_messages_cpp"
 )
 

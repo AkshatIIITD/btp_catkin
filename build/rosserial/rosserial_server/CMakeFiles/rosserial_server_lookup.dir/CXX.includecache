@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server/include/rosserial_server/msg_lookup.h
+/home/ubuntu/btp_catkin/src/rosserial/rosserial_server/include/rosserial_server/msg_lookup.h
 string
 -
 stdexcept
 -
 
-/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server/src/msg_lookup.cpp
+/home/ubuntu/btp_catkin/src/rosserial/rosserial_server/src/msg_lookup.cpp
 rosserial_server/msg_lookup.h
-/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server/src/rosserial_server/msg_lookup.h
+/home/ubuntu/btp_catkin/src/rosserial/rosserial_server/src/rosserial_server/msg_lookup.h
 Python.h
-/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server/src/Python.h
+/home/ubuntu/btp_catkin/src/rosserial/rosserial_server/src/Python.h
 
 /usr/include/python3.8/Python.h
 patchlevel.h

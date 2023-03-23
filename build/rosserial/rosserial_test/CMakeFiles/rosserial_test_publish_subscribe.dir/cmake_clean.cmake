@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_test/rosserial_test_publish_subscribe"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/rosserial_test/rosserial_test_publish_subscribe.pdb"
+  "/home/ubuntu/btp_catkin/devel/lib/rosserial_test/rosserial_test_publish_subscribe"
+  "/home/ubuntu/btp_catkin/devel/lib/rosserial_test/rosserial_test_publish_subscribe.pdb"
   "CMakeFiles/rosserial_test_publish_subscribe.dir/src/publish_subscribe.cpp.o"
 )
 

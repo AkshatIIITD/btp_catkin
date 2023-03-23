@@ -1,4 +1,4 @@
-prefix=/home/akshat/ProjectROS/catkin_ws/install
+prefix=/home/ubuntu/btp_catkin/install
 
 Name: rf2o_laser_odometry
 Description: Description of rf2o_laser_odometry

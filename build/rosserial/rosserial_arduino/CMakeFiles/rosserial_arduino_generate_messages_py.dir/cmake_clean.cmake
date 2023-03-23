@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/python3/dist-packages/rosserial_arduino/msg/_Adc.py"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/python3/dist-packages/rosserial_arduino/msg/__init__.py"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/python3/dist-packages/rosserial_arduino/srv/_Test.py"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/python3/dist-packages/rosserial_arduino/srv/__init__.py"
+  "/home/ubuntu/btp_catkin/devel/lib/python3/dist-packages/rosserial_arduino/msg/_Adc.py"
+  "/home/ubuntu/btp_catkin/devel/lib/python3/dist-packages/rosserial_arduino/msg/__init__.py"
+  "/home/ubuntu/btp_catkin/devel/lib/python3/dist-packages/rosserial_arduino/srv/_Test.py"
+  "/home/ubuntu/btp_catkin/devel/lib/python3/dist-packages/rosserial_arduino/srv/__init__.py"
   "CMakeFiles/rosserial_arduino_generate_messages_py"
 )
 

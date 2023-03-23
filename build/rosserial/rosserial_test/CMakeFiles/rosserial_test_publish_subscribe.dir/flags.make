@@ -6,5 +6,5 @@ CXX_FLAGS =   -DGTEST_HAS_PTHREAD=1
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"rosserial_test\"
 
-CXX_INCLUDES = -I/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_test/include -I/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_test/include -I/home/akshat/ProjectROS/catkin_ws/devel/include -I/home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_server/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest 
+CXX_INCLUDES = -I/home/ubuntu/btp_catkin/src/rosserial/rosserial_test/include -I/home/ubuntu/btp_catkin/build/rosserial/rosserial_test/include -I/home/ubuntu/btp_catkin/devel/include -I/home/ubuntu/btp_catkin/src/rosserial/rosserial_server/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest 
 

@@ -1,4 +1,4 @@
-prefix=/home/akshat/ProjectROS/catkin_ws/install
+prefix=/home/ubuntu/btp_catkin/install
 
 Name: rosserial_embeddedlinux
 Description: Description of rosserial_embeddedlinux

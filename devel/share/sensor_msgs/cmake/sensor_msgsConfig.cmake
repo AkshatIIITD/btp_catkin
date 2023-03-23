@@ -67,14 +67,14 @@ set(sensor_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(sensor_msgs_SOURCE_PREFIX /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs)
-  set(sensor_msgs_DEVEL_PREFIX /home/akshat/ProjectROS/catkin_ws/devel)
+  set(sensor_msgs_SOURCE_PREFIX /home/ubuntu/btp_catkin/src/sensor_msgs)
+  set(sensor_msgs_DEVEL_PREFIX /home/ubuntu/btp_catkin/devel)
   set(sensor_msgs_INSTALL_PREFIX "")
   set(sensor_msgs_PREFIX ${sensor_msgs_DEVEL_PREFIX})
 else()
   set(sensor_msgs_SOURCE_PREFIX "")
   set(sensor_msgs_DEVEL_PREFIX "")
-  set(sensor_msgs_INSTALL_PREFIX /home/akshat/ProjectROS/catkin_ws/install)
+  set(sensor_msgs_INSTALL_PREFIX /home/ubuntu/btp_catkin/install)
   set(sensor_msgs_PREFIX ${sensor_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(sensor_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/akshat/ProjectROS/catkin_ws/devel/include;/home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/include " STREQUAL " ")
+if(NOT "/home/ubuntu/btp_catkin/devel/include;/home/ubuntu/btp_catkin/src/sensor_msgs/include " STREQUAL " ")
   set(sensor_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/akshat/ProjectROS/catkin_ws/devel/include;/home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/include")
+  set(_include_dirs "/home/ubuntu/btp_catkin/devel/include;/home/ubuntu/btp_catkin/src/sensor_msgs/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/sensor_msgs " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/akshat/ProjectROS/catkin_ws/devel/include;/home/akshat/ProjectROS/
         message(FATAL_ERROR "Project 'sensor_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'sensor_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'sensor_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ubuntu/btp_catkin/src/sensor_msgs/${idir}'.  ${_report}")
     endif()
     _list_append_unique(sensor_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/akshat/ProjectROS/catkin_ws/devel/lib;/home/akshat/ProjectROS/Robotics_ws/devel/lib;/home/akshat/ProjectROS/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ubuntu/btp_catkin/devel/lib;/home/ubuntu/btp_catkin/devel/lib;/home/ubuntu/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

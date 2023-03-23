@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/btp_catkin/build
 
 # Utility rule file for rosserial_msgs_genpy.
 
@@ -63,10 +63,10 @@ rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/build: rosserial_ms
 .PHONY : rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/build
 
 rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_msgs && $(CMAKE_COMMAND) -P CMakeFiles/rosserial_msgs_genpy.dir/cmake_clean.cmake
+	cd /home/ubuntu/btp_catkin/build/rosserial/rosserial_msgs && $(CMAKE_COMMAND) -P CMakeFiles/rosserial_msgs_genpy.dir/cmake_clean.cmake
 .PHONY : rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/clean
 
 rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/rosserial/rosserial_msgs /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_msgs /home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/btp_catkin/src /home/ubuntu/btp_catkin/src/rosserial/rosserial_msgs /home/ubuntu/btp_catkin/build /home/ubuntu/btp_catkin/build/rosserial/rosserial_msgs /home/ubuntu/btp_catkin/build/rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rosserial/rosserial_msgs/CMakeFiles/rosserial_msgs_genpy.dir/depend
 
