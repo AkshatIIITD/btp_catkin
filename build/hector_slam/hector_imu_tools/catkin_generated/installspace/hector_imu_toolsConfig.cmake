@@ -185,7 +185,7 @@ foreach(t ${hector_imu_tools_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "geometry_msgs;nav_msgs;roscpp;sensor_msgs;tf")
+set(depends "")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

@@ -185,7 +185,7 @@ foreach(t ${hector_geotiff_plugins_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "hector_geotiff;hector_nav_msgs")
+set(depends "")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

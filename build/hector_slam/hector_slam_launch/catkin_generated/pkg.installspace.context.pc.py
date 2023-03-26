@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "hector_slam_launch"
 PROJECT_SPACE_DIR = "/home/akshat/ProjectROS/catkin_ws/install"
-PROJECT_VERSION = "0.5.2"
+PROJECT_VERSION = "0.3.5"

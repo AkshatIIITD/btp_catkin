@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(hector_map_tools_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "include;/usr/include/eigen3 " STREQUAL " ")
+if(NOT "include " STREQUAL " ")
   set(hector_map_tools_INCLUDE_DIRS "")
-  set(_include_dirs "include;/usr/include/eigen3")
+  set(_include_dirs "include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/hector_map_tools " STREQUAL " ")

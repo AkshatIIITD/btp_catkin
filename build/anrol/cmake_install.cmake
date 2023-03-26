@@ -52,3 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/anrol" TYPE FILE FILES "/home/akshat/ProjectROS/catkin_ws/src/anrol/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/anrol" TYPE PROGRAM FILES "/home/akshat/ProjectROS/catkin_ws/build/anrol/catkin_generated/installspace/odom_publisher.py")
+endif()
+

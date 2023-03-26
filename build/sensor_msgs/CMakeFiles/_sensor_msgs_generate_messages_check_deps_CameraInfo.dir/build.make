@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
 include sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_CameraInfo.dir/progress.make
 
 sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_CameraInfo:
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs && ../catkin_generated/env_cached.sh /home/akshat/ProjectROS/envir/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sensor_msgs /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/msg/CameraInfo.msg sensor_msgs/RegionOfInterest:std_msgs/Header
+	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs && ../catkin_generated/env_cached.sh /home/akshat/ProjectROS/envir/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sensor_msgs /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs/msg/CameraInfo.msg std_msgs/Header:sensor_msgs/RegionOfInterest
 
 _sensor_msgs_generate_messages_check_deps_CameraInfo: sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_CameraInfo
 _sensor_msgs_generate_messages_check_deps_CameraInfo: sensor_msgs/CMakeFiles/_sensor_msgs_generate_messages_check_deps_CameraInfo.dir/build.make
