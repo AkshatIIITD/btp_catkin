@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(hector_geotiff_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/akshat/ProjectROS/catkin_ws/src/hector_slam/hector_geotiff/include;/usr/include/eigen3 " STREQUAL " ")
+if(NOT "/home/akshat/ProjectROS/catkin_ws/src/hector_slam/hector_geotiff/include;/usr/include/eigen3;/usr/include/x86_64-linux-gnu/qt5/;/usr/include/x86_64-linux-gnu/qt5/QtWidgets;/usr/include/x86_64-linux-gnu/qt5/QtGui;/usr/include/x86_64-linux-gnu/qt5/QtCore;/usr/lib/x86_64-linux-gnu/qt5//mkspecs/linux-g++ " STREQUAL " ")
   set(hector_geotiff_INCLUDE_DIRS "")
-  set(_include_dirs "/home/akshat/ProjectROS/catkin_ws/src/hector_slam/hector_geotiff/include;/usr/include/eigen3")
+  set(_include_dirs "/home/akshat/ProjectROS/catkin_ws/src/hector_slam/hector_geotiff/include;/usr/include/eigen3;/usr/include/x86_64-linux-gnu/qt5/;/usr/include/x86_64-linux-gnu/qt5/QtWidgets;/usr/include/x86_64-linux-gnu/qt5/QtGui;/usr/include/x86_64-linux-gnu/qt5/QtCore;/usr/lib/x86_64-linux-gnu/qt5//mkspecs/linux-g++")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/hector_geotiff " STREQUAL " ")
@@ -116,7 +116,7 @@ if(NOT "/home/akshat/ProjectROS/catkin_ws/src/hector_slam/hector_geotiff/include
   endforeach()
 endif()
 
-set(libraries "geotiff_writer")
+set(libraries "geotiff_writer;/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")

@@ -20,7 +20,7 @@ TrajectoryPlannerROS:
   holonomic_robot: false
 
 # Forward Simulation Parameters
-  sim_time: 1.0
+  sim_time: 1.5 #1.0
   vx_samples: 50 #3
   vtheta_samples: 50 #20
   sim_granularity: 0.025 #0.0125

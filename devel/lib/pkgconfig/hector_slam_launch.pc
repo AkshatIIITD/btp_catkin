@@ -2,7 +2,7 @@ prefix=/home/akshat/ProjectROS/catkin_ws/devel
 
 Name: hector_slam_launch
 Description: Description of hector_slam_launch
-Version: 0.3.5
+Version: 0.5.2
 Cflags: 
 Libs: -L${prefix}/lib 
 Requires: 
