@@ -702,7 +702,7 @@ kdl_parser_DIR:PATH=/opt/ros/noetic/share/kdl_parser/cmake
 laser_geometry_DIR:PATH=/opt/ros/noetic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/noetic/lib/libresource_retriever.so
 
 //Value Computed by CMake
 lidarbot_BINARY_DIR:STATIC=/home/akshat/ProjectROS/catkin_ws/build/lidarbot
@@ -1000,6 +1000,12 @@ visualization_msgs_DIR:PATH=/home/akshat/ProjectROS/catkin_ws/devel/share/visual
 //Value Computed by CMake
 visualization_msgs_SOURCE_DIR:STATIC=/home/akshat/ProjectROS/catkin_ws/src/lidar_bot/lidarbot_ws/src/visualization_msgs
 
+//Value Computed by CMake
+wheel_odometry_BINARY_DIR:STATIC=/home/akshat/ProjectROS/catkin_ws/build/wheel_odometry
+
+//Value Computed by CMake
+wheel_odometry_SOURCE_DIR:STATIC=/home/akshat/ProjectROS/catkin_ws/src/wheel_odometry
+
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
 
@@ -1156,7 +1162,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=38
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=39
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

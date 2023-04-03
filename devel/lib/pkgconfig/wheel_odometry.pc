@@ -1,0 +1,8 @@
+prefix=/home/akshat/ProjectROS/catkin_ws/devel
+
+Name: wheel_odometry
+Description: Description of wheel_odometry
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

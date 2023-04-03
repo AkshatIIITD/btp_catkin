@@ -164,6 +164,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/akshat/ProjectROS/catkin_ws/build/rosserial/rosserial_windows/cmake_install.cmake")
   include("/home/akshat/ProjectROS/catkin_ws/build/hector_slam/hector_mapping/cmake_install.cmake")
   include("/home/akshat/ProjectROS/catkin_ws/build/using_markers/cmake_install.cmake")
+  include("/home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/cmake_install.cmake")
 
 endif()
 
