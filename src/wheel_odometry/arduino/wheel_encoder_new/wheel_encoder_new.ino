@@ -25,7 +25,8 @@ geometry_msgs::Twist msg;
 
 float move1;
 float move2;
-int speed = 50;
+int linearSpeed = 80;
+int angularSpeed = 60;
 
 //encoded motors inports-------------------
 #define ENC_IN_LEFT_A 18
@@ -54,39 +55,39 @@ void callback(const geometry_msgs::Twist& cmd_vel)
   move2 = cmd_vel.angular.z;
   if (move1 > 0 && move2 == 0)
   {
-    back(speed);
+    back(linearSpeed);
   }
   else if (move1 == 0 && move2 > 0 )
   {
-    right(speed);
+    right(angularSpeed);
   }
   else if (move1 == 0 && move2 < 0 )
   {
-    left(speed);
+    left(angularSpeed);
   }
   else if (move1 < 0)
   {
-    front(speed);
+    front(linearSpeed);
   }
   else if (abs(move1) < abs(move2)) {
     if (move2 > 0 )
     {
-      right(speed);
+      right(angularSpeed);
     }
     else if (move2 < 0 )
     {
-      left(speed);
+      left(angularSpeed);
     }
   }
 
   else if (abs(move1) > abs(move2)) {
     if (move1 > 0)
     {
-      back(speed);
+      back(linearSpeed);
     }
     else if (move1 < 0)
     {
-      front(speed);
+      front(linearSpeed);
     }
   }
   else
@@ -160,33 +161,15 @@ void loop() {
 
 void back(float speed)
 {
-  // m.motor(leftforw, FORWARD, speed);
-  // m.motor(rightforw, FORWARD, speed);
   motor1.setSpeed(-speed);
   motor2.setSpeed(-speed);
-
-  // digitalWrite(leftforw, HIGH);
-  // digitalWrite(rightforw, HIGH);
-  // digitalWrite(leftback, LOW);
-  // digitalWrite(rightback, LOW);
   delay(100);
-  
-
 }
 void front(float speed)
 {
-  // m.motor(leftforw, BACKWARD, speed);
-  // m.motor(rightforw, BACKWARD, speed);
   motor1.setSpeed(speed);
   motor2.setSpeed(speed);
-  //    m.motor(leftback, BACKWARD, speed);
-  //    m.motor(rightback, BACKWARD, speed);
-  // digitalWrite(leftforw, LOW);
-  // digitalWrite(rightforw, LOW);
-  // digitalWrite(leftback, HIGH);
-  // digitalWrite(rightback, HIGH);
-  delay(100);
-  
+  delay(100);  
 }
 void right(float speed)
 {
@@ -204,120 +187,12 @@ void right(float speed)
 }
 void left(float speed)
 {
-  //
   motor2.setSpeed(0);
   motor1.setSpeed(-speed);
-  //    m.motor(leftback, BACKWARD, speed);
-  //    m.motor(rightback, FORWARD, speed);
-  // digitalWrite(leftforw, HIGH);
-  // digitalWrite(rightforw, LOW);
-  // digitalWrite(leftback, LOW);
-  // digitalWrite(rightback, LOW);
-  delay(100);
-  
+  delay(100);  
 }
 void die()
 {
-  // m.motor(leftforw, RELEASE, speed);
-  // m.motor(rightforw, RELEASE, speed);
   motor1.setSpeed(0);
   motor2.setSpeed(0);
-  //    m.motor(leftback, RELEASE, speed);
-  //    m.motor(rightback, RELEASE, speed);
-  // digitalWrite(leftforw, LOW);
-  // digitalWrite(rightforw, LOW);
-  // digitalWrite(leftback, LOW);
-  // digitalWrite(rightback, LOW);
 }
-
-//void right_wheel_tick() {
-//
-// // Read the value for the encoder for the right wheel
-// int val = digitalRead(ENC_IN_RIGHT_B);
-//
-// if(val == LOW) {
-//   Direction_right = false; // Reverse
-// }
-// else {
-//   Direction_right = true; // Forward
-// }
-//
-// if (Direction_right) {
-//
-//   if (right_wheel_tick_count.data == encoder_maximum) {
-//     right_wheel_tick_count.data = encoder_minimum;
-//   }
-//   else {
-//     right_wheel_tick_count.data++;
-//   }
-// }
-// else {
-//   if (right_wheel_tick_count.data == encoder_minimum) {
-//     right_wheel_tick_count.data = encoder_maximum;
-//   }
-//   else {
-//     right_wheel_tick_count.data--;
-//   }
-// }
-//}
-////
-////// Increment the number of ticks
-////void left_wheel_tick() {
-////
-////  // Read the value for the encoder for the left wheel
-////  int val = digitalRead(ENC_IN_LEFT_B);
-////
-////  if(val == LOW) {
-////    Direction_left = true; // Reverse
-////  }
-////  else {
-////    Direction_left = false; // Forward
-////  }
-////
-////  if (Direction_left) {
-////    if (left_wheel_tick_count.data == encoder_maximum) {
-////      left_wheel_tick_count.data = encoder_minimum;
-////    }
-////    else {
-////      left_wheel_tick_count.data++;
-////    }
-////  }
-////  else {
-////    if (left_wheel_tick_count.data == encoder_minimum) {
-////      left_wheel_tick_count.data = encoder_maximum;
-////    }
-////    else {
-////      left_wheel_tick_count.data--;
-////    }
-////  }
-////}
-//
-//void left_wheel_tick() {
-//   
-//  // Read the value for the encoder for the left wheel
-//  int val = digitalRead(ENC_IN_LEFT_B);
-// 
-//  if(val == LOW) {
-//    Direction_left = true; // Reverse
-//  }
-//  else {
-//    Direction_left = false; // Forward
-//  }
-//   
-//  if (Direction_left) {
-//    if (left_wheel_tick_count.data == encoder_maximum) {
-//      left_wheel_tick_count.data = encoder_minimum;
-//    }
-//    else {
-//      left_wheel_tick_count.data++;  
-//    }  
-//  }
-//  else {
-//    if (left_wheel_tick_count.data == encoder_minimum) {
-//      left_wheel_tick_count.data = encoder_maximum;
-//    }
-//    else {
-//      left_wheel_tick_count.data--;  
-//    }   
-//  }
-//}
