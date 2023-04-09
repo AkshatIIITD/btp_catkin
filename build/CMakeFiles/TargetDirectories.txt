@@ -501,6 +501,7 @@
 /home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/CMakeFiles/install/strip.dir
 /home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/CMakeFiles/list_install_components.dir
 /home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/CMakeFiles/test.dir
+/home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/CMakeFiles/primitive_wheel_node.dir
 /home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir
 /home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/CMakeFiles/wheel_node.dir
 /home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir

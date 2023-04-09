@@ -3210,6 +3210,19 @@ basic_shapes/fast:
 .PHONY : basic_shapes/fast
 
 #=============================================================================
+# Target rules for targets named primitive_wheel_node
+
+# Build rule for target.
+primitive_wheel_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 primitive_wheel_node
+.PHONY : primitive_wheel_node
+
+# fast build rule for target.
+primitive_wheel_node/fast:
+	$(MAKE) -f wheel_odometry/CMakeFiles/primitive_wheel_node.dir/build.make wheel_odometry/CMakeFiles/primitive_wheel_node.dir/build
+.PHONY : primitive_wheel_node/fast
+
+#=============================================================================
 # Target rules for targets named controller_manager_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -3664,6 +3677,7 @@ help:
 	@echo "... hector_mapping_genlisp"
 	@echo "... hector_mapping_generate_messages_eus"
 	@echo "... basic_shapes"
+	@echo "... primitive_wheel_node"
 	@echo "... controller_manager_msgs_generate_messages_cpp"
 	@echo "... wheel_node"
 	@echo "... controller_manager_msgs_generate_messages_eus"

@@ -6,6 +6,7 @@
 
   
   <!-- Odometry -->
+  <!-- Note: This was working with all speeds in arduino code being 50 -->
   <include file="$(find rf2o_laser_odometry)/launch/rf2o_laser_odometry.launch"/>
   
   <!-- Map server -->

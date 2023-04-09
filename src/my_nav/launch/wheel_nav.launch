@@ -6,7 +6,7 @@
 
 
   <!-- Odometry -->
-  <node pkg="wheel_odometry" type="wheel_node" name="wheel_node"/>
+  <!-- <node pkg="wheel_odometry" type="wheel_node" name="wheel_node"/> -->
   
   <!-- Map server -->
   <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>

@@ -52,7 +52,3 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/wheel_odometry" TYPE FILE FILES "/home/akshat/ProjectROS/catkin_ws/src/wheel_odometry/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/wheel_odometry" TYPE PROGRAM FILES "/home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/catkin_generated/installspace/odom_publisher.py")
-endif()
-

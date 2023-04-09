@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+wheel_odometry/CMakeFiles/primitive_wheel_node.dir/rule:
+	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wheel_odometry/CMakeFiles/primitive_wheel_node.dir/rule
+.PHONY : wheel_odometry/CMakeFiles/primitive_wheel_node.dir/rule
+
+# Convenience name for target.
+primitive_wheel_node: wheel_odometry/CMakeFiles/primitive_wheel_node.dir/rule
+
+.PHONY : primitive_wheel_node
+
+# fast build rule for target.
+primitive_wheel_node/fast:
+	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f wheel_odometry/CMakeFiles/primitive_wheel_node.dir/build.make wheel_odometry/CMakeFiles/primitive_wheel_node.dir/build
+.PHONY : primitive_wheel_node/fast
+
+# Convenience name for target.
 wheel_odometry/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule:
 	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wheel_odometry/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
 .PHONY : wheel_odometry/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
@@ -434,6 +449,33 @@ src/odom.cpp.s:
 	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f wheel_odometry/CMakeFiles/wheel_node.dir/build.make wheel_odometry/CMakeFiles/wheel_node.dir/src/odom.cpp.s
 .PHONY : src/odom.cpp.s
 
+src/primitive_odom.o: src/primitive_odom.cpp.o
+
+.PHONY : src/primitive_odom.o
+
+# target to build an object file
+src/primitive_odom.cpp.o:
+	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f wheel_odometry/CMakeFiles/primitive_wheel_node.dir/build.make wheel_odometry/CMakeFiles/primitive_wheel_node.dir/src/primitive_odom.cpp.o
+.PHONY : src/primitive_odom.cpp.o
+
+src/primitive_odom.i: src/primitive_odom.cpp.i
+
+.PHONY : src/primitive_odom.i
+
+# target to preprocess a source file
+src/primitive_odom.cpp.i:
+	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f wheel_odometry/CMakeFiles/primitive_wheel_node.dir/build.make wheel_odometry/CMakeFiles/primitive_wheel_node.dir/src/primitive_odom.cpp.i
+.PHONY : src/primitive_odom.cpp.i
+
+src/primitive_odom.s: src/primitive_odom.cpp.s
+
+.PHONY : src/primitive_odom.s
+
+# target to generate assembly for a file
+src/primitive_odom.cpp.s:
+	cd /home/akshat/ProjectROS/catkin_ws/build && $(MAKE) -f wheel_odometry/CMakeFiles/primitive_wheel_node.dir/build.make wheel_odometry/CMakeFiles/primitive_wheel_node.dir/src/primitive_odom.cpp.s
+.PHONY : src/primitive_odom.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -443,6 +485,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... test"
+	@echo "... primitive_wheel_node"
 	@echo "... controller_manager_msgs_generate_messages_cpp"
 	@echo "... wheel_node"
 	@echo "... controller_manager_msgs_generate_messages_eus"
@@ -466,6 +509,9 @@ help:
 	@echo "... src/odom.o"
 	@echo "... src/odom.i"
 	@echo "... src/odom.s"
+	@echo "... src/primitive_odom.o"
+	@echo "... src/primitive_odom.i"
+	@echo "... src/primitive_odom.s"
 .PHONY : help
 
 
