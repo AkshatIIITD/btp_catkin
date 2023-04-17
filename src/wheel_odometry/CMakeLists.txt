@@ -1,12 +1,6 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(wheel_odometry)
 
-## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
-
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   controller_manager
   joint_state_publisher
@@ -33,29 +27,20 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
-
-## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/anrol.cpp
-# )
-#  add_library(anrol src/odom_pub.cpp)
-#    target_link_libraries(odom_pub.cpp
-#      ${catkin_LIBRARIES}
-#    )
-## Add cmake target dependencies of the library
-## as an example, code may need to be generated before libraries
-## either from message generation or dynamic reconfigure
-# add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node node/odom_pub.cpp)
+
 add_executable(wheel_node src/odom.cpp)
 target_link_libraries(wheel_node ${catkin_LIBRARIES})
 
 add_executable(primitive_wheel_node src/primitive_odom.cpp)
 target_link_libraries(primitive_wheel_node ${catkin_LIBRARIES})
+
+catkin_install_python(PROGRAMS
+  nodes/odom_publisher.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
