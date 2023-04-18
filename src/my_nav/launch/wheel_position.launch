@@ -1,15 +1,15 @@
 <launch>
   <!-- Arguments -->
-  <arg name="ticks_meter" default="12500">
-  <arg name="base_width" default="0.34">  
+  <arg name="ticks_meter" default="13000"/>
+  <arg name="base_width" default="0.34"/>  
   <arg name="map_file" default="$(find my_nav)/maps/new_rf.yaml"/>
   <arg name="open_rviz" default="true"/>
   <arg name="move_forward_only" default="false"/>
 
   <!-- Odometry -->
   <node pkg="wheel_odometry" type="odom_publisher.py" name="odom_publisher">
-    <param name="base_width"   type="float"    value="$(arg base_width)"/>
-    <param name="ticks_meter"  type="int"      value="$(arg ticks_meter)"/>
+    <param name="base_width"   value="$(arg base_width)"/>
+    <param name="ticks_meter"  value="$(arg ticks_meter)"/>
   </node>
   
   <!-- Map server -->
