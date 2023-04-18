@@ -1,16 +1,12 @@
 <launch>
   <!-- Arguments -->
-  <arg name="ticks_meter" default="13500"/>
-  <arg name="base_width" default="0.295"/>  
   <arg name="map_file" default="$(find my_nav)/maps/new_rf.yaml"/>
   <arg name="open_rviz" default="true"/>
   <arg name="move_forward_only" default="false"/>
 
   <!-- Odometry -->
-  <node pkg="wheel_odometry" type="odom_publisher.py" name="odom_publisher">
-    <param name="base_width"   value="$(arg base_width)"/>
-    <param name="ticks_meter"  value="$(arg ticks_meter)"/>
-  </node>
+  <!-- Note: This was working with all speeds in arduino code being 50 -->
+  <include file="$(find rf2o_laser_odometry)/launch/rf2o_laser_odometry.launch"/>
   
   <!-- Map server -->
   <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>

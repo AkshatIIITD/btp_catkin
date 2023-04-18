@@ -25,8 +25,8 @@ geometry_msgs::Twist msg;
 
 float move1;
 float move2;
-int linearSpeed = 80;
-int angularSpeed = 60;
+int linearSpeed = 70;
+int angularSpeed = 45;
 
 //encoded motors inports-------------------
 #define ENC_IN_LEFT_A 18
@@ -173,21 +173,13 @@ void front(float speed)
 }
 void right(float speed)
 {
-  // m.motor(leftforw, BACKWARD, speed);
-  // m.motor(rightforw, FORWARD, speed);
-  motor1.setSpeed(0);
+  motor1.setSpeed(speed);
   motor2.setSpeed(-speed);
-  // digitalWrite(leftforw, LOW);
-  // digitalWrite(rightforw, HIGH);
-  // digitalWrite(leftback, LOW);
-  // digitalWrite(rightback, LOW);
   delay(100);
-  
-
 }
 void left(float speed)
 {
-  motor2.setSpeed(0);
+  motor2.setSpeed(speed);
   motor1.setSpeed(-speed);
   delay(100);  
 }
