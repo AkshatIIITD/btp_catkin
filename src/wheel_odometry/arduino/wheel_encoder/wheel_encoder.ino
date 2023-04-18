@@ -25,8 +25,7 @@ geometry_msgs::Twist msg;
 
 float move1;
 float move2;
-int linearRight = 67;
-int linearLeft = 70;
+int linearSpeed = 70;
 int angularSpeed = 45;
 
 //encoded motors inports-------------------
@@ -49,7 +48,6 @@ boolean Direction_right = true;
 const int encoder_minimum = -32768;
 const int encoder_maximum = 32767;
 
-
 //call back function for subscriber
 void callback(const geometry_msgs::Twist& cmd_vel)
 {
@@ -57,7 +55,7 @@ void callback(const geometry_msgs::Twist& cmd_vel)
   move2 = cmd_vel.angular.z;
   if (move1 > 0 && move2 == 0)
   {
-    back();
+    back(linearSpeed);
   }
   else if (move1 == 0 && move2 > 0 )
   {
@@ -69,7 +67,7 @@ void callback(const geometry_msgs::Twist& cmd_vel)
   }
   else if (move1 < 0)
   {
-    front();
+    front(linearSpeed);
   }
   else if (abs(move1) < abs(move2)) {
     if (move2 > 0 )
@@ -85,11 +83,11 @@ void callback(const geometry_msgs::Twist& cmd_vel)
   else if (abs(move1) > abs(move2)) {
     if (move1 > 0)
     {
-      back();
+      back(linearSpeed);
     }
     else if (move1 < 0)
     {
-      front();
+      front(linearSpeed);
     }
   }
   else
@@ -100,6 +98,9 @@ void callback(const geometry_msgs::Twist& cmd_vel)
 
 
 // Keep track of the number of wheel ticks
+
+
+
 ros::Subscriber<geometry_msgs::Twist> sub("cmd_vel", &callback);
 
 std_msgs::Int16 right_wheel_tick_count;
@@ -107,9 +108,6 @@ ros::Publisher rightPub("right_ticks", &right_wheel_tick_count);
 
 std_msgs::Int16 left_wheel_tick_count;
 ros::Publisher leftPub("left_ticks", &left_wheel_tick_count);
-
-
-
 
 
 // 100ms interval for measurements
@@ -161,17 +159,17 @@ void loop() {
   delay(100);
 }
 
-void back()
+void back(float speed)
 {
-  motor1.setSpeed(-linearLeft);
-  motor2.setSpeed(-linearRight);
+  motor1.setSpeed(-speed);
+  motor2.setSpeed(-speed);
   delay(100);
 }
-void front()
+void front(float speed)
 {
-  motor1.setSpeed(linearLeft);
-  motor2.setSpeed(linearRight);
-  delay(100);
+  motor1.setSpeed(speed);
+  motor2.setSpeed(speed);
+  delay(100);  
 }
 void right(float speed)
 {
