@@ -25,9 +25,9 @@ geometry_msgs::Twist msg;
 
 float move1;
 float move2;
-int linearRight = 67;
-int linearLeft = 70;
-int angularSpeed = 45;
+//int linearRight = 67;
+//int linearLeft = 70;
+//int angularSpeed = 45;
 
 //encoded motors inports-------------------
 #define ENC_IN_LEFT_A 18
@@ -49,48 +49,32 @@ boolean Direction_right = true;
 const int encoder_minimum = -32768;
 const int encoder_maximum = 32767;
 
-
+//speed parameters
+const int linearSafe = 100;
+const int rotSafe = 60;
+const float linearGradient = linearSafe/0.22;
+const float angGradient = rotSafe/2.84;
+const float offset = 0.95714;
 //call back function for subscriber
+
 void callback(const geometry_msgs::Twist& cmd_vel)
 {
   move1 = cmd_vel.linear.x;
   move2 = cmd_vel.angular.z;
-  if (move1 > 0 && move2 == 0)
+  if (move2 == 0)
   {
-    back();
+    linear(-linearGradient * move1);
   }
-  else if (move1 == 0 && move2 > 0 )
+  else if (move1 == 0 )
   {
-    right(angularSpeed);
+    angular(angGradient * move2);
   }
-  else if (move1 == 0 && move2 < 0 )
-  {
-    left(angularSpeed);
-  }
-  else if (move1 < 0)
-  {
-    front();
-  }
-  else if (abs(move1) < abs(move2)) {
-    if (move2 > 0 )
-    {
-      right(angularSpeed);
-    }
-    else if (move2 < 0 )
-    {
-      left(angularSpeed);
-    }
+  else if (abs(move1/0.22) < abs(move2/2.84)) {
+    angular(angGradient * move2);
   }
 
-  else if (abs(move1) > abs(move2)) {
-    if (move1 > 0)
-    {
-      back();
-    }
-    else if (move1 < 0)
-    {
-      front();
-    }
+  else if (abs(move1/0.22) > abs(move2/2.84)) {
+    linear(-linearGradient * move1);
   }
   else
   {
@@ -161,30 +145,19 @@ void loop() {
   delay(100);
 }
 
-void back()
-{
-  motor1.setSpeed(-linearLeft);
-  motor2.setSpeed(-linearRight);
-  delay(100);
-}
-void front()
-{
-  motor1.setSpeed(linearLeft);
-  motor2.setSpeed(linearRight);
-  delay(100);
-}
-void right(float speed)
+void linear(float speed)
 {
   motor1.setSpeed(speed);
-  motor2.setSpeed(-speed);
+  motor2.setSpeed(speed *offset);
   delay(100);
 }
-void left(float speed)
+
+void angular(float speed)
 {
-  motor2.setSpeed(speed);
-  motor1.setSpeed(-speed);
-  delay(100);  
+  motor1.setSpeed(speed);
+  motor2.setSpeed(-speed*offset);
 }
+
 void die()
 {
   motor1.setSpeed(0);
