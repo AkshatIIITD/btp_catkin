@@ -61,6 +61,10 @@ void callback(const geometry_msgs::Twist& cmd_vel)
 {
   move1 = cmd_vel.linear.x;
   move2 = cmd_vel.angular.z;
+  if(move2>0)
+  move2 = max(0.7, move2);
+  else if(move2<0)
+  move2 = min(-0.7, move2);
   if (move2 == 0)
   {
     linear(-linearGradient * move1);
@@ -69,6 +73,10 @@ void callback(const geometry_msgs::Twist& cmd_vel)
   {
     angular(angGradient * move2);
   }
+  
+  else if (move1!=0 && move2!=0){
+    diffrential(-linearGradient*move1, angGradient*move2);
+  }
   else if (abs(move1/0.22) < abs(move2/2.84)) {
     angular(angGradient * move2);
   }
@@ -76,6 +84,7 @@ void callback(const geometry_msgs::Twist& cmd_vel)
   else if (abs(move1/0.22) > abs(move2/2.84)) {
     linear(-linearGradient * move1);
   }
+  
   else
   {
     die();
@@ -158,6 +167,11 @@ void angular(float speed)
   motor2.setSpeed(-speed*offset);
 }
 
+void diffrential(float fspeed, float rspeed){
+  //fspeed for linear movement and rspeed for rotational movement
+  motor1.setSpeed(min(100, fspeed + rspeed));
+  motor2.setSpeed(fspeed*offset);
+}
 void die()
 {
   motor1.setSpeed(0);
