@@ -54,7 +54,7 @@ const int linearSafe = 100;
 const int rotSafe = 60;
 const float linearGradient = linearSafe/0.22;
 const float angGradient = rotSafe/2.84;
-const float offset = 0.95714;
+const float offset = 0.975;
 //call back function for subscriber
 
 void callback(const geometry_msgs::Twist& cmd_vel)
@@ -156,8 +156,9 @@ void loop() {
 
 void linear(float speed)
 {
+  float newoffset = speed < 0 ? offset : 1;
   motor1.setSpeed(speed);
-  motor2.setSpeed(speed *offset);
+  motor2.setSpeed(speed *newoffset);
   delay(100);
 }
 
