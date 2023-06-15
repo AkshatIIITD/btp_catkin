@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/zepgar/git/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/zepgar/git/btp_catkin/build
 
 # Utility rule file for sensor_msgs_gennodejs.
 
@@ -63,10 +63,10 @@ sensor_msgs/CMakeFiles/sensor_msgs_gennodejs.dir/build: sensor_msgs_gennodejs
 .PHONY : sensor_msgs/CMakeFiles/sensor_msgs_gennodejs.dir/build
 
 sensor_msgs/CMakeFiles/sensor_msgs_gennodejs.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_gennodejs.dir/cmake_clean.cmake
+	cd /home/zepgar/git/btp_catkin/build/sensor_msgs && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_gennodejs.dir/cmake_clean.cmake
 .PHONY : sensor_msgs/CMakeFiles/sensor_msgs_gennodejs.dir/clean
 
 sensor_msgs/CMakeFiles/sensor_msgs_gennodejs.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/sensor_msgs /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs /home/akshat/ProjectROS/catkin_ws/build/sensor_msgs/CMakeFiles/sensor_msgs_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zepgar/git/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zepgar/git/btp_catkin/src /home/zepgar/git/btp_catkin/src/sensor_msgs /home/zepgar/git/btp_catkin/build /home/zepgar/git/btp_catkin/build/sensor_msgs /home/zepgar/git/btp_catkin/build/sensor_msgs/CMakeFiles/sensor_msgs_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sensor_msgs/CMakeFiles/sensor_msgs_gennodejs.dir/depend
 

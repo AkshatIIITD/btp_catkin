@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/zepgar/git/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/zepgar/git/btp_catkin/build
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zepgar/git/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zepgar/git/btp_catkin/src /home/zepgar/git/btp_catkin/src /home/zepgar/git/btp_catkin/build /home/zepgar/git/btp_catkin/build /home/zepgar/git/btp_catkin/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

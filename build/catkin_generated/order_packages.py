@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/order_packages.context.py.in
-source_root_dir = '/home/akshat/ProjectROS/catkin_ws/src'
+source_root_dir = '/home/zepgar/git/btp_catkin/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/akshat/ProjectROS/anrol_ws/devel;/home/akshat/ProjectROS/Robotics_ws/devel;/home/akshat/ProjectROS/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/akshat/ProjectROS/anrol_ws/devel;/home/akshat/ProjectROS/Robotics_ws/devel;/home/akshat/ProjectROS/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/zepgar/git/btp_catkin/devel;/home/zepgar/anrol_ws/devel;/opt/ros/noetic'.split(';') if '/home/zepgar/git/btp_catkin/devel;/home/zepgar/anrol_ws/devel;/opt/ros/noetic' != '' else []

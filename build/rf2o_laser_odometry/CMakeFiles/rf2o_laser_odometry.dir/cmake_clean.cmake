@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/librf2o_laser_odometry.pdb"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/librf2o_laser_odometry.so"
+  "/home/zepgar/git/btp_catkin/devel/lib/librf2o_laser_odometry.pdb"
+  "/home/zepgar/git/btp_catkin/devel/lib/librf2o_laser_odometry.so"
   "CMakeFiles/rf2o_laser_odometry.dir/src/CLaserOdometry2D.cpp.o"
 )
 

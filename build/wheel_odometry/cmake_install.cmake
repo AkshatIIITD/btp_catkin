@@ -1,8 +1,8 @@
-# Install script for directory: /home/akshat/ProjectROS/catkin_ws/src/wheel_odometry
+# Install script for directory: /home/zepgar/git/btp_catkin/src/wheel_odometry
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/akshat/ProjectROS/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zepgar/git/btp_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/catkin_generated/installspace/wheel_odometry.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zepgar/git/btp_catkin/build/wheel_odometry/catkin_generated/installspace/wheel_odometry.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/wheel_odometry/cmake" TYPE FILE FILES
-    "/home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/catkin_generated/installspace/wheel_odometryConfig.cmake"
-    "/home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/catkin_generated/installspace/wheel_odometryConfig-version.cmake"
+    "/home/zepgar/git/btp_catkin/build/wheel_odometry/catkin_generated/installspace/wheel_odometryConfig.cmake"
+    "/home/zepgar/git/btp_catkin/build/wheel_odometry/catkin_generated/installspace/wheel_odometryConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/wheel_odometry" TYPE FILE FILES "/home/akshat/ProjectROS/catkin_ws/src/wheel_odometry/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/wheel_odometry" TYPE FILE FILES "/home/zepgar/git/btp_catkin/src/wheel_odometry/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/wheel_odometry" TYPE PROGRAM FILES "/home/zepgar/git/btp_catkin/build/wheel_odometry/catkin_generated/installspace/odom_publisher.py")
 endif()
 

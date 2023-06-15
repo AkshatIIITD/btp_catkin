@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/wheel_odometry/wheel_node"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/wheel_odometry/wheel_node.pdb"
+  "/home/zepgar/git/btp_catkin/devel/lib/wheel_odometry/wheel_node"
+  "/home/zepgar/git/btp_catkin/devel/lib/wheel_odometry/wheel_node.pdb"
   "CMakeFiles/wheel_node.dir/src/odom.cpp.o"
 )
 

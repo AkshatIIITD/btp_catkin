@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/akshat/ProjectROS/catkin_ws/build'
+export PWD='/home/zepgar/git/btp_catkin/build'

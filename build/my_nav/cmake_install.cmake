@@ -1,8 +1,8 @@
-# Install script for directory: /home/akshat/ProjectROS/catkin_ws/src/my_nav
+# Install script for directory: /home/zepgar/git/btp_catkin/src/my_nav
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/akshat/ProjectROS/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zepgar/git/btp_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,26 +38,26 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/akshat/ProjectROS/catkin_ws/build/my_nav/catkin_generated/installspace/my_nav.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zepgar/git/btp_catkin/build/my_nav/catkin_generated/installspace/my_nav.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_nav/cmake" TYPE FILE FILES
-    "/home/akshat/ProjectROS/catkin_ws/build/my_nav/catkin_generated/installspace/my_navConfig.cmake"
-    "/home/akshat/ProjectROS/catkin_ws/build/my_nav/catkin_generated/installspace/my_navConfig-version.cmake"
+    "/home/zepgar/git/btp_catkin/build/my_nav/catkin_generated/installspace/my_navConfig.cmake"
+    "/home/zepgar/git/btp_catkin/build/my_nav/catkin_generated/installspace/my_navConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_nav" TYPE FILE FILES "/home/akshat/ProjectROS/catkin_ws/src/my_nav/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_nav" TYPE FILE FILES "/home/zepgar/git/btp_catkin/src/my_nav/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_nav" TYPE DIRECTORY FILES
-    "/home/akshat/ProjectROS/catkin_ws/src/my_nav/launch"
-    "/home/akshat/ProjectROS/catkin_ws/src/my_nav/maps"
-    "/home/akshat/ProjectROS/catkin_ws/src/my_nav/param"
-    "/home/akshat/ProjectROS/catkin_ws/src/my_nav/rviz"
+    "/home/zepgar/git/btp_catkin/src/my_nav/launch"
+    "/home/zepgar/git/btp_catkin/src/my_nav/maps"
+    "/home/zepgar/git/btp_catkin/src/my_nav/param"
+    "/home/zepgar/git/btp_catkin/src/my_nav/rviz"
     )
 endif()
 

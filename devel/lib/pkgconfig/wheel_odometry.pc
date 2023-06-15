@@ -1,4 +1,4 @@
-prefix=/home/akshat/ProjectROS/catkin_ws/devel
+prefix=/home/zepgar/git/btp_catkin/devel
 
 Name: wheel_odometry
 Description: Description of wheel_odometry

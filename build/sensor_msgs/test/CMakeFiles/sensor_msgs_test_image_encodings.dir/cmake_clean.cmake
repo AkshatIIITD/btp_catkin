@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings.pdb"
+  "/home/zepgar/git/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings"
+  "/home/zepgar/git/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings.pdb"
   "CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o"
 )
 

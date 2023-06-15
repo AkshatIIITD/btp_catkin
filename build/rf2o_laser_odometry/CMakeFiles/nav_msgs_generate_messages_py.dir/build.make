@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/zepgar/git/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/zepgar/git/btp_catkin/build
 
 # Utility rule file for nav_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ rf2o_laser_odometry/CMakeFiles/nav_msgs_generate_messages_py.dir/build: nav_msgs
 .PHONY : rf2o_laser_odometry/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 
 rf2o_laser_odometry/CMakeFiles/nav_msgs_generate_messages_py.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/rf2o_laser_odometry && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/zepgar/git/btp_catkin/build/rf2o_laser_odometry && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : rf2o_laser_odometry/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
 
 rf2o_laser_odometry/CMakeFiles/nav_msgs_generate_messages_py.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/rf2o_laser_odometry /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/rf2o_laser_odometry /home/akshat/ProjectROS/catkin_ws/build/rf2o_laser_odometry/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zepgar/git/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zepgar/git/btp_catkin/src /home/zepgar/git/btp_catkin/src/rf2o_laser_odometry /home/zepgar/git/btp_catkin/build /home/zepgar/git/btp_catkin/build/rf2o_laser_odometry /home/zepgar/git/btp_catkin/build/rf2o_laser_odometry/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rf2o_laser_odometry/CMakeFiles/nav_msgs_generate_messages_py.dir/depend
 

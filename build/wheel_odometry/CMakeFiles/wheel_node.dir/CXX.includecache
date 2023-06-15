@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/akshat/ProjectROS/catkin_ws/src/wheel_odometry/src/odom.cpp
+/home/zepgar/git/btp_catkin/src/wheel_odometry/src/odom.cpp
 ros/ros.h
-/home/akshat/ProjectROS/catkin_ws/src/wheel_odometry/src/ros/ros.h
+/home/zepgar/git/btp_catkin/src/wheel_odometry/src/ros/ros.h
 std_msgs/Int16.h
-/home/akshat/ProjectROS/catkin_ws/src/wheel_odometry/src/std_msgs/Int16.h
+/home/zepgar/git/btp_catkin/src/wheel_odometry/src/std_msgs/Int16.h
 nav_msgs/Odometry.h
 -
 geometry_msgs/PoseStamped.h

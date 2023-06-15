@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/wheel_odometry/primitive_wheel_node"
-  "/home/akshat/ProjectROS/catkin_ws/devel/lib/wheel_odometry/primitive_wheel_node.pdb"
+  "/home/zepgar/git/btp_catkin/devel/lib/wheel_odometry/primitive_wheel_node"
+  "/home/zepgar/git/btp_catkin/devel/lib/wheel_odometry/primitive_wheel_node.pdb"
   "CMakeFiles/primitive_wheel_node.dir/src/primitive_odom.cpp.o"
 )
 

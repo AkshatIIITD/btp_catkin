@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akshat/ProjectROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/zepgar/git/btp_catkin/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akshat/ProjectROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/zepgar/git/btp_catkin/build
 
 # Utility rule file for map_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ wheel_odometry/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build: map_msgs_
 .PHONY : wheel_odometry/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
 
 wheel_odometry/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/akshat/ProjectROS/catkin_ws/build/wheel_odometry && $(CMAKE_COMMAND) -P CMakeFiles/map_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/zepgar/git/btp_catkin/build/wheel_odometry && $(CMAKE_COMMAND) -P CMakeFiles/map_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : wheel_odometry/CMakeFiles/map_msgs_generate_messages_nodejs.dir/clean
 
 wheel_odometry/CMakeFiles/map_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/akshat/ProjectROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akshat/ProjectROS/catkin_ws/src /home/akshat/ProjectROS/catkin_ws/src/wheel_odometry /home/akshat/ProjectROS/catkin_ws/build /home/akshat/ProjectROS/catkin_ws/build/wheel_odometry /home/akshat/ProjectROS/catkin_ws/build/wheel_odometry/CMakeFiles/map_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zepgar/git/btp_catkin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zepgar/git/btp_catkin/src /home/zepgar/git/btp_catkin/src/wheel_odometry /home/zepgar/git/btp_catkin/build /home/zepgar/git/btp_catkin/build/wheel_odometry /home/zepgar/git/btp_catkin/build/wheel_odometry/CMakeFiles/map_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : wheel_odometry/CMakeFiles/map_msgs_generate_messages_nodejs.dir/depend
 
