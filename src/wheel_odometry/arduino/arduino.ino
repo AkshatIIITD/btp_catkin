@@ -27,7 +27,7 @@ Encoder rightMotor(ENC_IN_RIGHT_A, ENC_IN_RIGHT_B);
 //speed parameters
 const int linearSafe = 100;
 const int rotSafe = 60;
-const float linearGradient = linearSafe/0.44;
+const float linearGradient = linearSafe/0.22;
 const float angGradient = rotSafe/2.84; 
 //const float offset = 0.95714;
 
