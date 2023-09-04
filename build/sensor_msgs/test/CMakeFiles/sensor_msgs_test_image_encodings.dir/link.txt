@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/sensor_msgs_test_image_encodings.dir/test_image_encodings.cpp.o  -o /home/zepgar/git/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test_image_encodings   -L/home/zepgar/git/btp_catkin/build/gtest  -Wl,-rpath,/home/zepgar/git/btp_catkin/build/gtest:/home/zepgar/git/btp_catkin/build/gtest/lib ../../gtest/lib/libgtest.so -lpthread 

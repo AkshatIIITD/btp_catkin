@@ -24,8 +24,8 @@ class DiffTf:
         
         #### parameters #######
         self.rate = rospy.get_param('~rate',10.0)  # the rate at which to publish the transform
-        self.ticks_meter = float(rospy.get_param('~ticks_meter', 13500))  # The number of wheel encoder ticks per meter of travel
-        self.base_width = float(rospy.get_param('~base_width', 0.295)) # The wheel base width in meters
+        self.ticks_meter = float(rospy.get_param('ticks_meter', 21000))  # The number of wheel encoder ticks per meter of travel
+        self.base_width = float(rospy.get_param('~base_width', 0.235)) # The wheel base width in meters
         
         self.base_frame_id = rospy.get_param('~base_frame_id','base_footprint') # the name of the base frame of the robot
         self.odom_frame_id = rospy.get_param('~odom_frame_id', 'odom') # the name of the odometry reference frame
@@ -91,7 +91,7 @@ class DiffTf:
             # distance traveled is the average of the two wheels 
             d = ( d_left + d_right ) / 2
             # this approximation works (in radians) for small angles
-            th = ( d_left - d_right ) / self.base_width
+            th = ( d_right - d_left ) / self.base_width
             # calculate velocities
             self.dx = d / elapsed
             self.dr = th / elapsed

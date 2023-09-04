@@ -1,8 +1,0 @@
-prefix=/home/zepgar/git/btp_catkin/install
-
-Name: my_nav
-Description: Description of my_nav
-Version: 1.2.6
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
