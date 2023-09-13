@@ -13,10 +13,8 @@
 ros::NodeHandle nh;
 geometry_msgs::Twist msg;
 
-float move1;
-float move2;
-CytronMD motor1(PWM_DIR, 5, 4);  // PWM 1 = Pin 2, DIR 1 = Pin 4.
-CytronMD motor2(PWM_DIR, 3, 2); // PWM 2 = Pin 3, DIR 2 = Pin 5.
+CytronMD motor1(PWM_DIR, 5, 4);  // PWM 1 = Pin 5, DIR 1 = Pin 4.
+CytronMD motor2(PWM_DIR, 3, 2); // PWM 2 = Pin 3, DIR 2 = Pin 2.
 //motor 1 -> right, motor 2 -> left
 #define ENC_IN_RIGHT_A 18
 #define ENC_IN_RIGHT_B 19
@@ -25,27 +23,19 @@ CytronMD motor2(PWM_DIR, 3, 2); // PWM 2 = Pin 3, DIR 2 = Pin 5.
 Encoder leftMotor(ENC_IN_LEFT_A, ENC_IN_LEFT_B);
 Encoder rightMotor(ENC_IN_RIGHT_A, ENC_IN_RIGHT_B);
 //speed parameters
-const int linearSafe = 100;
-const int rotSafe = 60;
-const float linearGradient = linearSafe/0.22;
-const float angGradient = rotSafe/2.84; 
-//const float offset = 0.95714;
+const float linearGradient = 401.0;
+const float angGradient = 95.0; 
 
-//call back function for subscriber
+void driver(float linear = 0.0, float angular = 0.0) {
+  float leftSpeed = linear + (angular / 2);
+  float rightSpeed = linear - (angular / 2);
+  motor1.setSpeed(rightSpeed);
+  motor2.setSpeed(-leftSpeed);
+}
 void callback(const geometry_msgs::Twist& cmd_vel) {
-  move1 = cmd_vel.linear.x;
-  move2 = cmd_vel.angular.z;
-  if (move2 == 0) {
-    linear(linearGradient * move1);
-  } else if (move1 == 0 ) {
-    angular(-angGradient * move2);
-  } else if (abs(move1/0.22) < abs(move2/2.84)) {
-    angular(-angGradient * move2);
-  } else if (abs(move1/0.22) > abs(move2/2.84)) {
-    linear(linearGradient * move1);
-  } else {
-    die();
-  }
+  float linear = cmd_vel.linear.x;
+  float angular = cmd_vel.angular.z;
+  driver(linear * linearGradient, angular * angGradient);
 }
 // Keep track of the number of wheel ticks
 ros::Subscriber<geometry_msgs::Twist> sub("cmd_vel", &callback);
@@ -68,33 +58,15 @@ void setup() {
   nh.advertise(rightPub);
   nh.subscribe(sub); 
 }
-
 void left_wheel_tick() {
   left_wheel_tick_count.data = static_cast<int16_t>(leftMotor.read());
 }
-
 void right_wheel_tick() {
   right_wheel_tick_count.data = static_cast<int16_t>(-rightMotor.read());
 }
-
 void loop() {
   leftPub.publish( &left_wheel_tick_count );
   rightPub.publish( &right_wheel_tick_count );
   nh.spinOnce();
   delay(100);
-}
-
-void linear(float speed) {
-  motor1.setSpeed(speed);
-  motor2.setSpeed(-speed);
-}
-
-void angular(float speed) {
-  motor1.setSpeed(speed);
-  motor2.setSpeed(speed);
-}
-
-void die() {
-  motor1.setSpeed(0);
-  motor2.setSpeed(0);
 }
