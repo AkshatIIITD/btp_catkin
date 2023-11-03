@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/zepgar/git/btp_catkin/src/wheel_odometry/src/primitive_odom.cpp
+/home/furic/Documents/btp_catkin/src/wheel_odometry/src/primitive_odom.cpp
 ros/ros.h
-/home/zepgar/git/btp_catkin/src/wheel_odometry/src/ros/ros.h
+/home/furic/Documents/btp_catkin/src/wheel_odometry/src/ros/ros.h
 std_msgs/Int16.h
-/home/zepgar/git/btp_catkin/src/wheel_odometry/src/std_msgs/Int16.h
+/home/furic/Documents/btp_catkin/src/wheel_odometry/src/std_msgs/Int16.h
 nav_msgs/Odometry.h
 -
 geometry_msgs/PoseStamped.h
@@ -622,6 +622,8 @@ ros/datatypes.h
 vector
 -
 map
+-
+memory
 -
 boost/array.hpp
 -

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zepgar/git/btp_catkin/src/wheel_odometry/src/primitive_odom.cpp" "/home/zepgar/git/btp_catkin/build/wheel_odometry/CMakeFiles/primitive_wheel_node.dir/src/primitive_odom.cpp.o"
+  "/home/furic/Documents/btp_catkin/src/wheel_odometry/src/primitive_odom.cpp" "/home/furic/Documents/btp_catkin/build/wheel_odometry/CMakeFiles/primitive_wheel_node.dir/src/primitive_odom.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/zepgar/git/btp_catkin/devel/include"
-  "/home/zepgar/git/btp_catkin/src/sensor_msgs/include"
+  "/home/furic/Documents/btp_catkin/devel/include"
+  "/home/furic/Documents/btp_catkin/src/sensor_msgs/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"

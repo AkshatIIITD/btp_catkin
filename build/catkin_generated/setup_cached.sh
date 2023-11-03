@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/zepgar/git/btp_catkin/build'
+export PWD='/home/furic/Documents/btp_catkin/build'

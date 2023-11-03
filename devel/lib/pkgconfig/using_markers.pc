@@ -1,4 +1,4 @@
-prefix=/home/zepgar/git/btp_catkin/devel
+prefix=/home/furic/Documents/btp_catkin/devel
 
 Name: using_markers
 Description: Description of using_markers

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zepgar/git/btp_catkin/src/using_markers/src/basic_shapes.cpp
+/home/furic/Documents/btp_catkin/src/using_markers/src/basic_shapes.cpp
 ros/ros.h
 -
 visualization_msgs/Marker.h
@@ -474,6 +474,8 @@ ros/datatypes.h
 vector
 -
 map
+-
+memory
 -
 boost/array.hpp
 -

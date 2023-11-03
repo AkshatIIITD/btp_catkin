@@ -1,0 +1,8 @@
+prefix=/home/furic/Documents/btp_catkin/devel
+
+Name: ros_autonomous_slam
+Description: Description of ros_autonomous_slam
+Version: 1.0.0
+Cflags: -I/home/furic/Documents/btp_catkin/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

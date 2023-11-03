@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zepgar/git/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test"
-  "/home/zepgar/git/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test.pdb"
+  "/home/furic/Documents/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test"
+  "/home/furic/Documents/btp_catkin/devel/lib/sensor_msgs/sensor_msgs_test.pdb"
   "CMakeFiles/sensor_msgs_test.dir/main.cpp.o"
 )
 

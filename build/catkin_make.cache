@@ -1,2 +1,2 @@
-my_nav:sensor_msgs:using_markers:wheel_odometry
--DCATKIN_DEVEL_PREFIX=/home/zepgar/git/btp_catkin/devel -DCMAKE_INSTALL_PREFIX=/home/zepgar/git/btp_catkin/install -G Unix Makefiles
+my_nav:ros_autonomous_slam:sensor_msgs:using_markers:wheel_odometry
+-DCATKIN_DEVEL_PREFIX=/home/furic/Documents/btp_catkin/devel -DCMAKE_INSTALL_PREFIX=/home/furic/Documents/btp_catkin/install -G Unix Makefiles

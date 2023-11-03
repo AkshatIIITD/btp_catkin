@@ -1,8 +1,8 @@
-# Install script for directory: /home/zepgar/git/btp_catkin/src/using_markers
+# Install script for directory: /home/furic/Documents/btp_catkin/src/using_markers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zepgar/git/btp_catkin/install")
+  set(CMAKE_INSTALL_PREFIX "/home/furic/Documents/btp_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zepgar/git/btp_catkin/build/using_markers/catkin_generated/installspace/using_markers.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/furic/Documents/btp_catkin/build/using_markers/catkin_generated/installspace/using_markers.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/using_markers/cmake" TYPE FILE FILES
-    "/home/zepgar/git/btp_catkin/build/using_markers/catkin_generated/installspace/using_markersConfig.cmake"
-    "/home/zepgar/git/btp_catkin/build/using_markers/catkin_generated/installspace/using_markersConfig-version.cmake"
+    "/home/furic/Documents/btp_catkin/build/using_markers/catkin_generated/installspace/using_markersConfig.cmake"
+    "/home/furic/Documents/btp_catkin/build/using_markers/catkin_generated/installspace/using_markersConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/using_markers" TYPE FILE FILES "/home/zepgar/git/btp_catkin/src/using_markers/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/using_markers" TYPE FILE FILES "/home/furic/Documents/btp_catkin/src/using_markers/package.xml")
 endif()
 

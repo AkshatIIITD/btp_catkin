@@ -1,4 +1,4 @@
-prefix=/home/zepgar/git/btp_catkin/install
+prefix=/home/furic/Documents/btp_catkin/install
 
 Name: my_nav
 Description: Description of my_nav

@@ -67,14 +67,14 @@ set(using_markers_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(using_markers_SOURCE_PREFIX /home/zepgar/git/btp_catkin/src/using_markers)
-  set(using_markers_DEVEL_PREFIX /home/zepgar/git/btp_catkin/devel)
+  set(using_markers_SOURCE_PREFIX /home/furic/Documents/btp_catkin/src/using_markers)
+  set(using_markers_DEVEL_PREFIX /home/furic/Documents/btp_catkin/devel)
   set(using_markers_INSTALL_PREFIX "")
   set(using_markers_PREFIX ${using_markers_DEVEL_PREFIX})
 else()
   set(using_markers_SOURCE_PREFIX "")
   set(using_markers_DEVEL_PREFIX "")
-  set(using_markers_INSTALL_PREFIX /home/zepgar/git/btp_catkin/install)
+  set(using_markers_INSTALL_PREFIX /home/furic/Documents/btp_catkin/install)
   set(using_markers_PREFIX ${using_markers_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zepgar/git/btp_catkin/install/lib;/home/zepgar/git/btp_catkin/devel/lib;/home/zepgar/anrol_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/furic/Documents/btp_catkin/install/lib;/home/furic/Documents/btp_catkin/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

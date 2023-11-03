@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zepgar/git/btp_catkin/devel/lib/using_markers/basic_shapes"
-  "/home/zepgar/git/btp_catkin/devel/lib/using_markers/basic_shapes.pdb"
+  "/home/furic/Documents/btp_catkin/devel/lib/using_markers/basic_shapes"
+  "/home/furic/Documents/btp_catkin/devel/lib/using_markers/basic_shapes.pdb"
   "CMakeFiles/basic_shapes.dir/src/basic_shapes.cpp.o"
 )
 

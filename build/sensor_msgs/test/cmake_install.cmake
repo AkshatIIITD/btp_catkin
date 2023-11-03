@@ -1,8 +1,8 @@
-# Install script for directory: /home/zepgar/git/btp_catkin/src/sensor_msgs/test
+# Install script for directory: /home/furic/Documents/btp_catkin/src/sensor_msgs/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zepgar/git/btp_catkin/install")
+  set(CMAKE_INSTALL_PREFIX "/home/furic/Documents/btp_catkin/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -1,8 +1,8 @@
-prefix=/home/zepgar/git/btp_catkin/devel
+prefix=/home/furic/Documents/btp_catkin/devel
 
 Name: sensor_msgs
 Description: Description of sensor_msgs
 Version: 1.11.10
-Cflags: -I/home/zepgar/git/btp_catkin/devel/include -I/home/zepgar/git/btp_catkin/src/sensor_msgs/include
+Cflags: -I/home/furic/Documents/btp_catkin/devel/include -I/home/furic/Documents/btp_catkin/src/sensor_msgs/include
 Libs: -L${prefix}/lib 
 Requires: geometry_msgs message_runtime std_msgs

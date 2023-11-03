@@ -67,14 +67,14 @@ set(my_nav_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(my_nav_SOURCE_PREFIX /home/zepgar/git/btp_catkin/src/my_nav)
-  set(my_nav_DEVEL_PREFIX /home/zepgar/git/btp_catkin/devel)
+  set(my_nav_SOURCE_PREFIX /home/furic/Documents/btp_catkin/src/my_nav)
+  set(my_nav_DEVEL_PREFIX /home/furic/Documents/btp_catkin/devel)
   set(my_nav_INSTALL_PREFIX "")
   set(my_nav_PREFIX ${my_nav_DEVEL_PREFIX})
 else()
   set(my_nav_SOURCE_PREFIX "")
   set(my_nav_DEVEL_PREFIX "")
-  set(my_nav_INSTALL_PREFIX /home/zepgar/git/btp_catkin/install)
+  set(my_nav_INSTALL_PREFIX /home/furic/Documents/btp_catkin/install)
   set(my_nav_PREFIX ${my_nav_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zepgar/git/btp_catkin/install/lib;/home/zepgar/git/btp_catkin/devel/lib;/home/zepgar/anrol_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/furic/Documents/btp_catkin/install/lib;/home/furic/Documents/btp_catkin/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
