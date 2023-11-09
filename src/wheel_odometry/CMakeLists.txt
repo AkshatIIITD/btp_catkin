@@ -34,9 +34,6 @@ include_directories(
 add_executable(wheel_node src/odom.cpp)
 target_link_libraries(wheel_node ${catkin_LIBRARIES})
 
-add_executable(primitive_wheel_node src/primitive_odom.cpp)
-target_link_libraries(primitive_wheel_node ${catkin_LIBRARIES})
-
 catkin_install_python(PROGRAMS
   nodes/odom_publisher.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
